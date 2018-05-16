@@ -1,0 +1,15 @@
+C:\Users\PC\Desktop\REES_projekat\REES_project\SHES_WPF\bin\Debug\SHES_WPF.exe.config
+C:\Users\PC\Desktop\REES_projekat\REES_project\SHES_WPF\bin\Debug\SHES_WPF.exe
+C:\Users\PC\Desktop\REES_projekat\REES_project\SHES_WPF\bin\Debug\SHES_WPF.pdb
+C:\Users\PC\Desktop\REES_projekat\REES_project\SHES_WPF\obj\Debug\SHES_WPF.csprojResolveAssemblyReference.cache
+C:\Users\PC\Desktop\REES_projekat\REES_project\SHES_WPF\obj\Debug\MainWindow.g.cs
+C:\Users\PC\Desktop\REES_projekat\REES_project\SHES_WPF\obj\Debug\App.g.cs
+C:\Users\PC\Desktop\REES_projekat\REES_project\SHES_WPF\obj\Debug\SHES_WPF_MarkupCompile.cache
+C:\Users\PC\Desktop\REES_projekat\REES_project\SHES_WPF\obj\Debug\SHES_WPF_MarkupCompile.lref
+C:\Users\PC\Desktop\REES_projekat\REES_project\SHES_WPF\obj\Debug\MainWindow.baml
+C:\Users\PC\Desktop\REES_projekat\REES_project\SHES_WPF\obj\Debug\SHES_WPF.g.resources
+C:\Users\PC\Desktop\REES_projekat\REES_project\SHES_WPF\obj\Debug\SHES_WPF.Properties.Resources.resources
+C:\Users\PC\Desktop\REES_projekat\REES_project\SHES_WPF\obj\Debug\SHES_WPF.csproj.GenerateResource.cache
+C:\Users\PC\Desktop\REES_projekat\REES_project\SHES_WPF\obj\Debug\SHES_WPF.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\REES_projekat\REES_project\SHES_WPF\obj\Debug\SHES_WPF.exe
+C:\Users\PC\Desktop\REES_projekat\REES_project\SHES_WPF\obj\Debug\SHES_WPF.pdb
