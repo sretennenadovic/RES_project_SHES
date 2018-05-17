@@ -1,0 +1,6 @@
+C:\Users\Aleksandar\Desktop\Projekat REES\RES_project_SHES\REES_project\Battery\bin\Debug\Battery.exe.config
+C:\Users\Aleksandar\Desktop\Projekat REES\RES_project_SHES\REES_project\Battery\bin\Debug\Battery.exe
+C:\Users\Aleksandar\Desktop\Projekat REES\RES_project_SHES\REES_project\Battery\bin\Debug\Battery.pdb
+C:\Users\Aleksandar\Desktop\Projekat REES\RES_project_SHES\REES_project\Battery\obj\Debug\Battery.csproj.CoreCompileInputs.cache
+C:\Users\Aleksandar\Desktop\Projekat REES\RES_project_SHES\REES_project\Battery\obj\Debug\Battery.exe
+C:\Users\Aleksandar\Desktop\Projekat REES\RES_project_SHES\REES_project\Battery\obj\Debug\Battery.pdb
