@@ -4,3 +4,10 @@ C:\Users\Aleksandar\Desktop\Projekat REES\RES_project_SHES\REES_project\SolarPan
 C:\Users\Aleksandar\Desktop\Projekat REES\RES_project_SHES\REES_project\SolarPanel\obj\Debug\SolarPanel.csproj.CoreCompileInputs.cache
 C:\Users\Aleksandar\Desktop\Projekat REES\RES_project_SHES\REES_project\SolarPanel\obj\Debug\SolarPanel.exe
 C:\Users\Aleksandar\Desktop\Projekat REES\RES_project_SHES\REES_project\SolarPanel\obj\Debug\SolarPanel.pdb
+C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\SolarPanel\bin\Debug\SolarPanel.exe.config
+C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\SolarPanel\bin\Debug\SolarPanel.exe
+C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\SolarPanel\bin\Debug\SolarPanel.pdb
+C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\SolarPanel\obj\Debug\SolarPanel.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\SolarPanel\obj\Debug\SolarPanel.exe
+C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\SolarPanel\obj\Debug\SolarPanel.pdb
+C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\SolarPanel\obj\Debug\SolarPanel.csprojResolveAssemblyReference.cache

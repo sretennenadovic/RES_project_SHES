@@ -1,7 +1,9 @@
-﻿using System;
+﻿using Contracts;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -9,15 +11,34 @@ namespace SHES_ConsolApp
 {
     class Program
     {
-        
+        public static IBattery proxy;
+        static Dictionary<string, double[]> dodaj;
+        static ServiceHost sh1 = new ServiceHost(typeof(BatterySHESImplement));
+
         static void Main(string[] args)
         {
             StartProcesses();
+            OpenConnections();
+
+
+            //menjacemo da bude lepse 
+            dodaj = new Dictionary<string, double []>();
+            dodaj.Add("duracel", new double[2] { 3, 4 });
+            dodaj.Add("sssss", new double[2] { 1, 3 });
+            dodaj.Add("varta", new double[2] { 2, 4 });
+            if (DateTime.Now.Hour == 18)
+            {
+                proxy.listBatteries(dodaj, true);
+                proxy.DoWork(1);
+            }
+            //menjacemo da bude lepse
+
+
             Console.ReadKey();
         }
 
 
-        public static void StartProcesses()
+        private static void StartProcesses()
         {
             // Pokrecemo Battery projekat
             Process p1 = new Process();
@@ -28,6 +49,24 @@ namespace SHES_ConsolApp
             Process p2 = new Process();
             p2.StartInfo.FileName = @"..\..\..\SolarPanel\bin\Debug\SolarPanel.exe";
             p2.Start();
+        }
+
+        private static void OpenConnections()
+        {
+            OpenConnectionForBattery();
+        }
+
+        private static void OpenConnectionForBattery()
+        {
+            //Otvaranje servisa za bateriju
+            sh1.AddServiceEndpoint(typeof(IBatterySHES), new NetTcpBinding(), new Uri("net.tcp://localhost:10010/IBatterySHES"));
+            sh1.Open();
+            
+            //Otvaranje kanala ka bateriji
+            ChannelFactory<IBattery> cf1 = new ChannelFactory<IBattery>(new NetTcpBinding(), new EndpointAddress("net.tcp://localhost:10020/IBattery"));
+            proxy = cf1.CreateChannel();
+
+            Console.WriteLine("Otvorena konekcija sa baterijom!");
         }
     }
 }

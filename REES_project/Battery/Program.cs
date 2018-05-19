@@ -1,16 +1,135 @@
-﻿using System;
+﻿using Contracts;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.ServiceModel;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Battery
 {
     class Program
     {
+        public enum Stanja : int { PUNJENJE=0,PRAZNJENJE=1,ISKLJUCENA=2};
+
+        static ServiceHost sh = new ServiceHost(typeof(BatteryImplement));
+        public static IBatterySHES proxy;
+        public static Dictionary<string, double[]> baterija = new Dictionary<string, double []>();
+        public static bool spremanSam = false;
+        public static int brojac = 0;
+        public static Stanja stanje = Stanja.ISKLJUCENA;
+        static object _lock = new object();
+
+
         static void Main(string[] args)
         {
-            Console.ReadLine();
+            OpenConnectionToSHES();
+
+            while (true)
+            {
+                if (spremanSam)
+                {
+                    RadiPosao();
+                    OdrzavajStanje();
+                    break;
+                }
+            }
+
+            Console.ReadKey();
+
+        }
+
+        private static void OpenConnectionToSHES()
+        {
+            //dizemo servis na bateriji
+            sh.AddServiceEndpoint(typeof(IBattery), new NetTcpBinding(), new Uri("net.tcp://localhost:10020/IBattery"));
+            sh.Open();
+
+            //konekcija ka serveru shes2
+            ChannelFactory<IBatterySHES> cf1 = new ChannelFactory<IBatterySHES>(new NetTcpBinding(), new EndpointAddress("net.tcp://localhost:10010/IBatterySHES"));
+            proxy = cf1.CreateChannel();
+
+            Console.WriteLine("Otvorena konekcija prema SHES-u!");
+        }
+
+        private static void OdrzavajStanje()
+        {
+            while (true)
+            {
+                if(stanje == Stanja.PUNJENJE)
+                {
+                    brojac++;
+                    if (brojac % 60==0 && brojac != 0)
+                    {
+                        brojac = 0;
+
+                        foreach (var item in baterija)
+                        {
+                            //ne mozemo napuniti bateriju vise nego sto joj je max snaga
+                            if (item.Value[0] < item.Value[1])
+                            {
+                                lock (_lock)
+                                {
+                                    //pretvorimo sate kapaciteta u minute, uvecamo za 1, a zatim vratimo u sate
+                                    item.Value[0] = item.Value[0] * 60;
+                                    item.Value[0] += 1;
+                                    item.Value[0] = item.Value[0] / 60;
+                                }
+                            }
+                        }
+                    }
+                }else if(stanje == Stanja.PRAZNJENJE)
+                {
+                    brojac++;
+                    if (brojac % 60 == 0 && brojac!=0)
+                    {
+                        brojac = 0;
+
+                        foreach (var item in baterija)
+                        {
+                            //ne mozemo isprazniti bateriju vise od 0
+                            if (item.Value[0] > 0)
+                            {
+                                lock (_lock)
+                                {
+                                    //pretvorimo sate kapaciteta u minute, umanjimo za 1, a zatim vratimo u sate
+                                    item.Value[0] = item.Value[0] * 60;
+                                    item.Value[0] -= 1;
+                                    item.Value[0] = item.Value[0] / 60;
+                                }
+                            }
+                        }
+                    }
+                }
+                else
+                {
+                    brojac = 0;
+                }
+                Thread.Sleep(1000);
+            }
+        }
+
+        //metoda koja ce se vrteti na svaki sekund i slati odgovarajuce informacije serveru (SHES-u)
+        private static void RadiPosao()
+        {
+            Task t1 = Task.Factory.StartNew(() =>
+            {
+                while (true)
+                {
+                    double rez = 0;
+                    foreach (KeyValuePair<string,double[]> item in baterija)
+                    {
+                        lock(_lock){
+                        //prvo u listi se nalazi KAPACITET, i samo njega sabiramo
+                        rez += item.Value[0];
+                        }
+                    }
+
+                    proxy.MyInfo(rez, (int)stanje);
+                    Thread.Sleep(1000);
+                }
+            });
         }
     }
 }
