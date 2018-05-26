@@ -11,13 +11,13 @@ namespace Battery
     {
         public void DoWork(int enumeration)
         {
-            Program.stanje = (Program.Stanja)enumeration;
+            Program.state = (Program.States)enumeration;
         }
 
-        public void listBatteries(Dictionary<string, double[]> baterije, bool spreman)
+        public void listBatteries(Dictionary<string, double[]> batteries, bool ready)
         {
-            Program.baterija = baterije;
-            Program.spremanSam = spreman;
+            Program.batteries = batteries;
+            Program.ready = ready;
         }
     }
 }

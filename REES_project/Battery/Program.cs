@@ -11,14 +11,14 @@ namespace Battery
 {
     class Program
     {
-        public enum Stanja : int { PUNJENJE=0,PRAZNJENJE=1,ISKLJUCENA=2};
+        public enum States : int { PUNJENJE=0,PRAZNJENJE=1,ISKLJUCENA=2};
 
         static ServiceHost sh = new ServiceHost(typeof(BatteryImplement));
         public static IBatterySHES proxy;
-        public static Dictionary<string, double[]> baterija = new Dictionary<string, double []>();
-        public static bool spremanSam = false;
-        public static int brojac = 0;
-        public static Stanja stanje = Stanja.ISKLJUCENA;
+        public static Dictionary<string, double[]> batteries = new Dictionary<string, double []>();
+        public static bool ready = false;
+        public static int counter = 0;
+        public static States state = States.ISKLJUCENA;
         static object _lock = new object();
 
 
@@ -28,7 +28,7 @@ namespace Battery
 
             while (true)
             {
-                if (spremanSam)
+                if (ready)
                 {
                     RadiPosao();
                     OdrzavajStanje();
@@ -55,59 +55,63 @@ namespace Battery
 
         private static void OdrzavajStanje()
         {
-            while (true)
+            Task t1 = Task.Factory.StartNew(() =>
             {
-                if(stanje == Stanja.PUNJENJE)
+                while (true)
                 {
-                    brojac++;
-                    if (brojac % 60==0 && brojac != 0)
+                    if (state == States.PUNJENJE)
                     {
-                        brojac = 0;
-
-                        foreach (var item in baterija)
+                        counter++;
+                        if (counter % 60 == 0 && counter != 0)
                         {
-                            //ne mozemo napuniti bateriju vise nego sto joj je max snaga
-                            if (item.Value[0] < item.Value[1])
+                            counter = 0;
+
+                            foreach (var item in batteries)
                             {
-                                lock (_lock)
+                                //ne mozemo napuniti bateriju vise nego sto joj je max snaga
+                                if (item.Value[0] < item.Value[1])
                                 {
-                                    //pretvorimo sate kapaciteta u minute, uvecamo za 1, a zatim vratimo u sate
-                                    item.Value[0] = item.Value[0] * 60;
-                                    item.Value[0] += 1;
-                                    item.Value[0] = item.Value[0] / 60;
+                                    lock (_lock)
+                                    {
+                                        //pretvorimo sate kapaciteta u minute, uvecamo za 1, a zatim vratimo u sate
+                                        item.Value[0] = item.Value[0] * 60;
+                                        item.Value[0] += 1;
+                                        item.Value[0] = item.Value[0] / 60;
+                                    }
                                 }
                             }
                         }
                     }
-                }else if(stanje == Stanja.PRAZNJENJE)
-                {
-                    brojac++;
-                    if (brojac % 60 == 0 && brojac!=0)
+                    else if (state == States.PRAZNJENJE)
                     {
-                        brojac = 0;
-
-                        foreach (var item in baterija)
+                        counter++;
+                        if (counter % 60 == 0 && counter != 0)
                         {
-                            //ne mozemo isprazniti bateriju vise od 0
-                            if (item.Value[0] > 0)
+                            counter = 0;
+
+                            foreach (var item in batteries)
                             {
-                                lock (_lock)
+                                //ne mozemo isprazniti bateriju vise od 0
+                                if (item.Value[0] > 0)
                                 {
-                                    //pretvorimo sate kapaciteta u minute, umanjimo za 1, a zatim vratimo u sate
-                                    item.Value[0] = item.Value[0] * 60;
-                                    item.Value[0] -= 1;
-                                    item.Value[0] = item.Value[0] / 60;
+                                    lock (_lock)
+                                    {
+                                        //pretvorimo sate kapaciteta u minute, umanjimo za 1, a zatim vratimo u sate
+                                        item.Value[0] = item.Value[0] * 60;
+                                        item.Value[0] -= 1;
+                                        item.Value[0] = item.Value[0] / 60;
+                                    }
                                 }
                             }
                         }
                     }
+                    else
+                    {
+                        counter = 0;
+                    }
+                    Thread.Sleep(1000);
                 }
-                else
-                {
-                    brojac = 0;
-                }
-                Thread.Sleep(1000);
-            }
+            });
         }
 
         //metoda koja ce se vrteti na svaki sekund i slati odgovarajuce informacije serveru (SHES-u)
@@ -118,7 +122,7 @@ namespace Battery
                 while (true)
                 {
                     double rez = 0;
-                    foreach (KeyValuePair<string,double[]> item in baterija)
+                    foreach (KeyValuePair<string,double[]> item in batteries)
                     {
                         lock(_lock){
                         //prvo u listi se nalazi KAPACITET, i samo njega sabiramo
@@ -126,7 +130,7 @@ namespace Battery
                         }
                     }
 
-                    proxy.MyInfo(rez, (int)stanje);
+                    proxy.MyInfo(rez, (int)state);
                     Thread.Sleep(1000);
                 }
             });

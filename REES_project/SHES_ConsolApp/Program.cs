@@ -12,8 +12,11 @@ namespace SHES_ConsolApp
     class Program
     {
         public static IBattery proxy;
-        static Dictionary<string, double[]> dodaj;
+        public static ISolarPanel proxyB;
+        static Dictionary<string, double[]> addBatteries;
+        static Dictionary<string, double> addSolarPanels;
         static ServiceHost sh1 = new ServiceHost(typeof(BatterySHESImplement));
+        static ServiceHost sh2 = new ServiceHost(typeof(SolarPanelSHESImplement));
 
         static void Main(string[] args)
         {
@@ -22,17 +25,22 @@ namespace SHES_ConsolApp
 
 
             //menjacemo da bude lepse 
-            dodaj = new Dictionary<string, double []>();
-            dodaj.Add("duracel", new double[2] { 3, 4 });
-            dodaj.Add("sssss", new double[2] { 1, 3 });
-            dodaj.Add("varta", new double[2] { 2, 4 });
+            addBatteries = new Dictionary<string, double []>();
+            addBatteries.Add("duracel", new double[2] { 3, 4 });
+            addBatteries.Add("sssss", new double[2] { 1, 3 });
+            addBatteries.Add("varta", new double[2] { 2, 4 });
             if (DateTime.Now.Hour == 18)
             {
-                proxy.listBatteries(dodaj, true);
+                proxy.listBatteries(addBatteries, true);
                 proxy.DoWork(1);
             }
             //menjacemo da bude lepse
 
+            addSolarPanels = new Dictionary<string, double>();
+            addSolarPanels.Add("solar1", 10);
+            addSolarPanels.Add("solar2", 15);
+
+            proxyB.listSolarPanels(addSolarPanels, true);
 
             Console.ReadKey();
         }
@@ -54,6 +62,8 @@ namespace SHES_ConsolApp
         private static void OpenConnections()
         {
             OpenConnectionForBattery();
+            OpenConnectionForSolarPanel();
+
         }
 
         private static void OpenConnectionForBattery()
@@ -67,6 +77,19 @@ namespace SHES_ConsolApp
             proxy = cf1.CreateChannel();
 
             Console.WriteLine("Otvorena konekcija sa baterijom!");
+        }
+
+        private static void OpenConnectionForSolarPanel()
+        {
+            //Otvaranje servisa za bateriju
+            sh2.AddServiceEndpoint(typeof(ISolarPanelSHES), new NetTcpBinding(), new Uri("net.tcp://localhost:10040/ISolarPanelSHES"));
+            sh2.Open();
+
+            //Otvaranje kanala ka bateriji
+            ChannelFactory<ISolarPanel> cf1 = new ChannelFactory<ISolarPanel>(new NetTcpBinding(), new EndpointAddress("net.tcp://localhost:10030/ISolarPanel"));
+            proxyB = cf1.CreateChannel();
+
+            Console.WriteLine("Otvorena konekcija sa solarnim panelom!");
         }
     }
 }

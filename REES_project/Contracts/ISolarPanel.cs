@@ -8,11 +8,9 @@ using System.Threading.Tasks;
 namespace Contracts
 {
     [ServiceContract]
-    public interface IBattery
+    public interface ISolarPanel
     {
         [OperationContract]
-        void DoWork(int enumeration);
-        [OperationContract]
-        void listBatteries(Dictionary<string, double []> batteries, bool ready);
+        void listSolarPanels(Dictionary<string, double> panels, bool ready);
     }
 }
