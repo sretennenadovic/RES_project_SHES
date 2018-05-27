@@ -41,10 +41,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IBattery.cs" />
-    <Compile Include="IBatterySHES.cs" />
-    <Compile Include="ISolarPanel.cs" />
-    <Compile Include="ISolarPanelSHES.cs" />
+    <Compile Include="AddingProjects\IAddBattery.cs" />
+    <Compile Include="AddingProjects\IAdding.cs" />
+    <Compile Include="BatteryConnection\IBattery.cs" />
+    <Compile Include="BatteryConnection\IBatterySHES.cs" />
+    <Compile Include="SolarPanelConnection\ISolarPanel.cs" />
+    <Compile Include="SolarPanelConnection\ISolarPanelSHES.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

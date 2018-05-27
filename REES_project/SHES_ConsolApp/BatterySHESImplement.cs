@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SHES_ConsolApp
 {
-    class BatterySHESImplement : IBatterySHES
+    public class BatterySHESImplement : IBatterySHES
     {
         public void MyInfo(double capacity, int state)
         {
@@ -19,9 +19,13 @@ namespace SHES_ConsolApp
             {
                 Console.WriteLine("\"praznjenja\".");
             }
-            else
+            else if (state == 2)
             {
                 Console.WriteLine("\"ne radi\".");
+            }
+            else
+            {
+                throw new ArgumentException("Invalid state!");
             }
         }
     }

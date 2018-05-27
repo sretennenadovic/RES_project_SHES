@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\BatteryTest\bin\Debug\BatteryTest.dll" total="10" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2018-05-27" time="16:05:32">
+  <environment nunit-version="2.6.4.14350" clr-version="2.0.50727.8922" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="C:\Users\PC\Desktop\semestar6\deljeno\REES\Razvoj EES\NUnit-2.6.4\bin" machine-name="DESKTOP-Q6OJE16" user="PC" user-domain="DESKTOP-Q6OJE16" />
+  <culture-info current-culture="sr-Latn-RS" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\BatteryTest\bin\Debug\BatteryTest.dll" executed="True" result="Success" success="True" time="0.453" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="BatteryTest" executed="True" result="Success" success="True" time="0.443" asserts="0">
+        <results>
+          <test-suite type="TestFixture" name="BatteryImplementTest" executed="True" result="Success" success="True" time="0.441" asserts="0">
+            <results>
+              <test-suite type="ParameterizedTest" name="DoWorkBadParameter" executed="True" result="Success" success="True" time="0.421" asserts="0">
+                <results>
+                  <test-case name="BatteryTest.BatteryImplementTest.DoWorkBadParameter(-1)" executed="True" result="Success" success="True" time="0.388" asserts="0" />
+                  <test-case name="BatteryTest.BatteryImplementTest.DoWorkBadParameter(-10)" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                  <test-case name="BatteryTest.BatteryImplementTest.DoWorkBadParameter(-100)" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                  <test-case name="BatteryTest.BatteryImplementTest.DoWorkBadParameter(4)" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                  <test-case name="BatteryTest.BatteryImplementTest.DoWorkBadParameter(40)" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                  <test-case name="BatteryTest.BatteryImplementTest.DoWorkBadParameter(400)" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                  <test-case name="BatteryTest.BatteryImplementTest.DoWorkBadParameter(&quot;string&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                </results>
+              </test-suite>
+              <test-suite type="ParameterizedTest" name="DoWorkGoodParameter" executed="True" result="Success" success="True" time="0.009" asserts="0">
+                <results>
+                  <test-case name="BatteryTest.BatteryImplementTest.DoWorkGoodParameter(0)" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="BatteryTest.BatteryImplementTest.DoWorkGoodParameter(1)" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="BatteryTest.BatteryImplementTest.DoWorkGoodParameter(2)" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

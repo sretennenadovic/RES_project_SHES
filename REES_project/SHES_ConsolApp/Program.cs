@@ -13,29 +13,26 @@ namespace SHES_ConsolApp
     {
         public static IBattery proxy;
         public static ISolarPanel proxyB;
-        static Dictionary<string, double[]> addBatteries;
-        static Dictionary<string, double> addSolarPanels;
+        public static Dictionary<string, double[]> addBatteries = new Dictionary<string, double[]>();
+        public static Dictionary<string, double> addSolarPanels;
         static ServiceHost sh1 = new ServiceHost(typeof(BatterySHESImplement));
         static ServiceHost sh2 = new ServiceHost(typeof(SolarPanelSHESImplement));
+        static Battery battery = new Battery();
 
         static void Main(string[] args)
         {
             StartProcesses();
             OpenConnections();
 
+            AddComponents();
 
-            //menjacemo da bude lepse 
-            addBatteries = new Dictionary<string, double []>();
-            addBatteries.Add("duracel", new double[2] { 3, 4 });
-            addBatteries.Add("sssss", new double[2] { 1, 3 });
-            addBatteries.Add("varta", new double[2] { 2, 4 });
-            if (DateTime.Now.Hour == 18)
+            if (DateTime.Now.Hour == 15)
             {
                 proxy.listBatteries(addBatteries, true);
                 proxy.DoWork(1);
             }
             //menjacemo da bude lepse
-
+            Console.WriteLine("Ispis3");
             addSolarPanels = new Dictionary<string, double>();
             addSolarPanels.Add("solar1", 10);
             addSolarPanels.Add("solar2", 15);
@@ -45,7 +42,14 @@ namespace SHES_ConsolApp
             Console.ReadKey();
         }
 
+        #region method for adding components in system
+        private static void AddComponents()
+        {
+            battery.Add();
+        }
+        #endregion method for adding components in system
 
+        #region Starting processes
         private static void StartProcesses()
         {
             // Pokrecemo Battery projekat
@@ -58,7 +62,9 @@ namespace SHES_ConsolApp
             p2.StartInfo.FileName = @"..\..\..\SolarPanel\bin\Debug\SolarPanel.exe";
             p2.Start();
         }
+        #endregion Starting processes
 
+        #region Opening connections
         private static void OpenConnections()
         {
             OpenConnectionForBattery();
@@ -91,5 +97,6 @@ namespace SHES_ConsolApp
 
             Console.WriteLine("Otvorena konekcija sa solarnim panelom!");
         }
+        #endregion Opening connections
     }
 }

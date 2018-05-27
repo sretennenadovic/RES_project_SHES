@@ -11,6 +11,8 @@ namespace Battery
 {
     class Program
     {
+
+        #region Fileds
         public enum States : int { PUNJENJE=0,PRAZNJENJE=1,ISKLJUCENA=2};
 
         static ServiceHost sh = new ServiceHost(typeof(BatteryImplement));
@@ -20,7 +22,7 @@ namespace Battery
         public static int counter = 0;
         public static States state = States.ISKLJUCENA;
         static object _lock = new object();
-
+        #endregion Fileds
 
         static void Main(string[] args)
         {
@@ -40,6 +42,7 @@ namespace Battery
 
         }
 
+        #region OpenConnectionSHES
         private static void OpenConnectionToSHES()
         {
             //dizemo servis na bateriji
@@ -48,11 +51,19 @@ namespace Battery
 
             //konekcija ka serveru shes2
             ChannelFactory<IBatterySHES> cf1 = new ChannelFactory<IBatterySHES>(new NetTcpBinding(), new EndpointAddress("net.tcp://localhost:10010/IBatterySHES"));
-            proxy = cf1.CreateChannel();
-
-            Console.WriteLine("Otvorena konekcija prema SHES-u!");
+            try
+            {
+                proxy = cf1.CreateChannel();
+                Console.WriteLine("Otvorena konekcija prema SHES-u!");
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
         }
+        #endregion OpenConnectionSHES
 
+        #region KeepState
         private static void OdrzavajStanje()
         {
             Task t1 = Task.Factory.StartNew(() =>
@@ -113,6 +124,9 @@ namespace Battery
                 }
             });
         }
+        #endregion KeepState
+
+        #region DoWork
 
         //metoda koja ce se vrteti na svaki sekund i slati odgovarajuce informacije serveru (SHES-u)
         private static void RadiPosao()
@@ -130,10 +144,18 @@ namespace Battery
                         }
                     }
 
-                    proxy.MyInfo(rez, (int)state);
+                    try
+                    {
+                        proxy.MyInfo(rez, (int)state);
+                    }catch(Exception e)
+                    {
+                        Console.WriteLine(e.Message);
+                    }
+
                     Thread.Sleep(1000);
                 }
             });
         }
+        #endregion DoWork
     }
 }

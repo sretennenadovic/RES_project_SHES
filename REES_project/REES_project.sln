@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolarPanel", "SolarPanel\So
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts", "Contracts\Contracts.csproj", "{21B66F92-D596-42CA-9411-52BD08B80A2D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SHES_ConsolAppTest", "SHES_ConsolAppTest\SHES_ConsolAppTest.csproj", "{0ED37546-7EAB-4BED-B4FB-83249124992B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BatteryTest", "BatteryTest\BatteryTest.csproj", "{AAEC3186-DED1-41ED-848A-3B889B0E7CE4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{21B66F92-D596-42CA-9411-52BD08B80A2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21B66F92-D596-42CA-9411-52BD08B80A2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21B66F92-D596-42CA-9411-52BD08B80A2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0ED37546-7EAB-4BED-B4FB-83249124992B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0ED37546-7EAB-4BED-B4FB-83249124992B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0ED37546-7EAB-4BED-B4FB-83249124992B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0ED37546-7EAB-4BED-B4FB-83249124992B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAEC3186-DED1-41ED-848A-3B889B0E7CE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAEC3186-DED1-41ED-848A-3B889B0E7CE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAEC3186-DED1-41ED-848A-3B889B0E7CE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAEC3186-DED1-41ED-848A-3B889B0E7CE4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
