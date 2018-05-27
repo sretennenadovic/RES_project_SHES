@@ -13,8 +13,8 @@ namespace SHES_ConsolApp
     {
         public static IBattery proxy;
         public static ISolarPanel proxyB;
+        public static Dictionary<string, double> addSolarPanels = new Dictionary<string, double>();
         public static Dictionary<string, double[]> addBatteries = new Dictionary<string, double[]>();
-        public static Dictionary<string, double> addSolarPanels;
         static ServiceHost sh1 = new ServiceHost(typeof(BatterySHESImplement));
         static ServiceHost sh2 = new ServiceHost(typeof(SolarPanelSHESImplement));
         static Battery battery = new Battery();
@@ -26,7 +26,7 @@ namespace SHES_ConsolApp
 
             AddComponents();
 
-            if (DateTime.Now.Hour == 15)
+            if (DateTime.Now.Hour == 20)
             {
                 proxy.listBatteries(addBatteries, true);
                 proxy.DoWork(1);

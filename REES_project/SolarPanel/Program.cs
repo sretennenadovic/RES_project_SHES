@@ -77,8 +77,13 @@ namespace SolarPanel
                             rez += (item.Value * 20) / 100;
                         }
                     }
-
-                    proxy.MyInfo(rez);
+                    try
+                    {
+                        proxy.MyInfo(rez);
+                    }catch(Exception e)
+                    {
+                        Console.WriteLine(e.Message);
+                    }
                     Thread.Sleep(1000);
                 }
             });

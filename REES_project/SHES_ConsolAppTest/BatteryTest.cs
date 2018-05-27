@@ -1,6 +1,7 @@
 ﻿using Contracts;
 using Contracts.AddingProjects;
 using Moq;
+using Moq.Language.Flow;
 using NUnit.Framework;
 using SHES_ConsolApp;
 using System;
@@ -14,7 +15,9 @@ namespace SHES_ConsolAppTest
     [TestFixture]
     public class BatteryTest
     {
+        Dictionary<string, double[]> example2;
          Dictionary<string, double[]> example1 = new Dictionary<string, double[]>();
+        
 
         [Test]
         [TestCase(null,3,5)]
@@ -38,7 +41,7 @@ namespace SHES_ConsolAppTest
         public void BatteryCheckValidationCapacityInvalid(string name, double capacity, double maxPower)
         {
             Battery battery = new Battery();
-
+ 
             battery.CheckValidation(name, capacity, maxPower,example1);
         }
 
@@ -86,6 +89,49 @@ namespace SHES_ConsolAppTest
             battery.CheckValidation(name, capacity, maxPower, example1);
            
             
+        }
+
+        [Test]
+        [TestCase("duracel", 1, 5)]
+        [TestCase("duracel", 3, 3)]
+        [TestCase("duracel", 1, 7)]
+        [TestCase("duracel", 3, 4)]
+        [TestCase("varta", 3, 4)]
+        [TestCase("varta", 9, 9)]
+        [TestCase("varta", 1, 1)]
+        [ExpectedException(typeof(ArgumentException))]
+
+        public void BatteryCheckValidationNameAlreadyExists(string name, double capacity, double maxPower)
+        {
+            Battery battery = new Battery();
+            example2 = new Dictionary<string, double[]>();
+            example2.Add("duracel", new double[] { 3, 4 });
+            example2.Add("varta", new double[] { 3, 4 });
+
+            battery.CheckValidation(name, capacity, maxPower, example2);
+
+
+        }
+
+        [Test]
+        [TestCase("baterija1", 1, 5)]
+        [TestCase("baterija2", 3, 3)]
+        [TestCase("baterija1", 1, 7)]
+        [TestCase("baterija3", 3, 4)]
+        [TestCase("baterija4", 3, 4)]
+        [TestCase("baterija5", 9, 9)]
+        [TestCase("baterija1000", 1, 1)]
+
+        public void BatteryCheckValidationAllGoodParameters(string name, double capacity, double maxPower)
+        {
+            Battery battery = new Battery();
+            example2 = new Dictionary<string, double[]>();
+            example2.Add("duracel", new double[] { 3, 4 });
+            example2.Add("varta", new double[] { 3, 4 });
+
+            battery.CheckValidation(name, capacity, maxPower, example2);
+
+
         }
     }
 }

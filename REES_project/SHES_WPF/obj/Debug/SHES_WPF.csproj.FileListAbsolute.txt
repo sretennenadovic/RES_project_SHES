@@ -66,3 +66,4 @@ C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\SHES_WPF\obj\Deb
 C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\SHES_WPF\obj\Debug\SHES_WPF.csproj.CopyComplete
 C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\SHES_WPF\obj\Debug\SHES_WPF.exe
 C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\SHES_WPF\obj\Debug\SHES_WPF.pdb
+C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\SHES_WPF\obj\Debug\SHES_WPF.csprojResolveAssemblyReference.cache
