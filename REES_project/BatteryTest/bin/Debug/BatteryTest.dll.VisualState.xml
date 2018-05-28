@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
-  <TopNode>[0-1013]C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\BatteryTest\bin\Debug\BatteryTest.dll</TopNode>
-  <SelectedNode>[0-1013]C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\BatteryTest\bin\Debug\BatteryTest.dll</SelectedNode>
+  <TopNode>[0-1024]C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\BatteryTest\bin\Debug\BatteryTest.dll</TopNode>
+  <SelectedNode>[0-1025]BatteryTest</SelectedNode>
   <ExcludeCategories>false</ExcludeCategories>
   <Nodes>
-    <Node UniqueName="[0-1013]C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\BatteryTest\bin\Debug\BatteryTest.dll" Expanded="true" />
-    <Node UniqueName="[0-1014]BatteryTest" Expanded="true" />
+    <Node UniqueName="[0-1024]C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\BatteryTest\bin\Debug\BatteryTest.dll" Expanded="true" />
+    <Node UniqueName="[0-1025]BatteryTest" Expanded="true" />
     <Node UniqueName="[0-1000]BatteryTest.BatteryImplementTest" Expanded="true" />
     <Node UniqueName="[0-1005]BatteryTest.BatteryImplementTest.DoWorkBadParameter" Expanded="true" />
     <Node UniqueName="[0-1001]BatteryTest.BatteryImplementTest.DoWorkGoodParameter" Expanded="true" />
+    <Node UniqueName="[0-1013]BatteryTest.BatteryImplementTest.ListBatteriesBadParameter1" Expanded="true" />
+    <Node UniqueName="[0-1019]BatteryTest.BatteryImplementTest.ListBatteriesBadParameter2" Expanded="true" />
+    <Node UniqueName="[0-1016]BatteryTest.BatteryImplementTest.ListBatteriesBadParameter2" Expanded="true" />
+    <Node UniqueName="[0-1022]BatteryTest.BatteryImplementTest.ListBatteriesGoodParameter" Expanded="true" />
   </Nodes>
 </VisualState>

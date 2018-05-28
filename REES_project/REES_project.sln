@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SHES_ConsolAppTest", "SHES_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BatteryTest", "BatteryTest\BatteryTest.csproj", "{AAEC3186-DED1-41ED-848A-3B889B0E7CE4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolarPanelTest", "SolarPanelTest\SolarPanelTest.csproj", "{A1543399-D8D7-42EB-844F-3EF9FF36BAAD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{AAEC3186-DED1-41ED-848A-3B889B0E7CE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AAEC3186-DED1-41ED-848A-3B889B0E7CE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AAEC3186-DED1-41ED-848A-3B889B0E7CE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1543399-D8D7-42EB-844F-3EF9FF36BAAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1543399-D8D7-42EB-844F-3EF9FF36BAAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1543399-D8D7-42EB-844F-3EF9FF36BAAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1543399-D8D7-42EB-844F-3EF9FF36BAAD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

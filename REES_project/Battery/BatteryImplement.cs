@@ -18,8 +18,16 @@ namespace Battery
             Program.state = (Program.States)enumeration;
         }
 
-        public void listBatteries(Dictionary<string, double[]> batteries, bool ready)
+        public void ListBatteries(Dictionary<string, double[]> batteries, bool ready)
         {
+            if (batteries == null)
+            {
+                throw new NullReferenceException("Dictionary can't be null!");
+            }
+            if(batteries.Count == 0)
+            {
+                throw new ArgumentException("Dictionary must have values!");
+            }
             Program.batteries = batteries;
             Program.ready = ready;
         }

@@ -13,6 +13,6 @@ namespace Contracts
         [OperationContract]
         void DoWork(int enumeration);
         [OperationContract]
-        void listBatteries(Dictionary<string, double []> batteries, bool ready);
+        void ListBatteries(Dictionary<string, double []> batteries, bool ready);
     }
 }

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
+  <TopNode>[0-1009]C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SolarPanelTest\bin\Debug\SolarPanelTest.dll</TopNode>
+  <SelectedNode>[0-1009]C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SolarPanelTest\bin\Debug\SolarPanelTest.dll</SelectedNode>
+  <ExcludeCategories>false</ExcludeCategories>
+  <Nodes>
+    <Node UniqueName="[0-1009]C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SolarPanelTest\bin\Debug\SolarPanelTest.dll" Expanded="true" />
+    <Node UniqueName="[0-1010]SolarPanelTest" Expanded="true" />
+    <Node UniqueName="[0-1000]SolarPanelTest.SolarPanelImplementTest" Expanded="true" />
+    <Node UniqueName="[0-1004]SolarPanelTest.SolarPanelImplementTest.ListBatteriesBadParameters2" Expanded="true" />
+    <Node UniqueName="[0-1007]SolarPanelTest.SolarPanelImplementTest.ListBatteriesGoodParameter1" Expanded="true" />
+    <Node UniqueName="[0-1001]SolarPanelTest.SolarPanelImplementTest.ListSolarPanelBadParameters1" Expanded="true" />
+  </Nodes>
+</VisualState>

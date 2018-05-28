@@ -28,7 +28,7 @@ namespace SHES_ConsolApp
 
             if (DateTime.Now.Hour == 20)
             {
-                proxy.listBatteries(addBatteries, true);
+                proxy.ListBatteries(addBatteries, true);
                 proxy.DoWork(1);
             }
             //menjacemo da bude lepse

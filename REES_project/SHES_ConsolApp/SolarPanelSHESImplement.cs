@@ -11,6 +11,10 @@ namespace SHES_ConsolApp
     {
         public void MyInfo(double power)
         {
+            if(power < 0)
+            {
+                throw new ArgumentException("Invalid power value!");
+            }
             Console.WriteLine("Snaga svih panela je: {0}", power);
         }
     }

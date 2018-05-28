@@ -1,25 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!--This file represents the results of running a test suite-->
-<test-results name="C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\SHES_ConsolAppTest\bin\Debug\SHES_ConsolAppTest.dll" total="47" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2018-05-27" time="20:15:02">
-  <environment nunit-version="2.6.4.14350" clr-version="2.0.50727.8922" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="C:\Users\PC\Desktop\semestar6\deljeno\REES\Razvoj EES\NUnit-2.6.4\bin" machine-name="DESKTOP-Q6OJE16" user="PC" user-domain="DESKTOP-Q6OJE16" />
-  <culture-info current-culture="sr-Latn-RS" current-uiculture="en-US" />
-  <test-suite type="Assembly" name="C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\SHES_ConsolAppTest\bin\Debug\SHES_ConsolAppTest.dll" executed="True" result="Success" success="True" time="0.277" asserts="0">
+<test-results name="C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SHES_ConsolAppTest\bin\Debug\SHES_ConsolAppTest.dll" total="56" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2018-05-28" time="23:20:50">
+  <environment nunit-version="2.6.4.14350" clr-version="2.0.50727.8922" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="C:\Users\Aleksandar\Desktop\Razvoj EES\RES\STARO\NUnit-2.6.4\NUnit-2.6.4\bin" machine-name="ALEKSANDAR" user="Aleksandar" user-domain="ALEKSANDAR" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SHES_ConsolAppTest\bin\Debug\SHES_ConsolAppTest.dll" executed="True" result="Success" success="True" time="0.569" asserts="0">
     <results>
-      <test-suite type="Namespace" name="SHES_ConsolAppTest" executed="True" result="Success" success="True" time="0.267" asserts="0">
+      <test-suite type="Namespace" name="SHES_ConsolAppTest" executed="True" result="Success" success="True" time="0.547" asserts="0">
         <results>
-          <test-suite type="TestFixture" name="BatterySHESImplementTest" executed="True" result="Success" success="True" time="0.079" asserts="0">
+          <test-suite type="TestFixture" name="BatterySHESImplementTest" executed="True" result="Success" success="True" time="0.192" asserts="0">
             <results>
-              <test-suite type="ParameterizedTest" name="MyInfoBadParameters" executed="True" result="Success" success="True" time="0.059" asserts="0">
+              <test-suite type="ParameterizedTest" name="MyInfoBadParameters" executed="True" result="Success" success="True" time="0.159" asserts="0">
                 <results>
-                  <test-case name="SHES_ConsolAppTest.BatterySHESImplementTest.MyInfoBadParameters(5,-1)" executed="True" result="Success" success="True" time="0.032" asserts="0" />
-                  <test-case name="SHES_ConsolAppTest.BatterySHESImplementTest.MyInfoBadParameters(5,3)" executed="True" result="Success" success="True" time="0.001" asserts="0" />
-                  <test-case name="SHES_ConsolAppTest.BatterySHESImplementTest.MyInfoBadParameters(5,-100)" executed="True" result="Success" success="True" time="0.001" asserts="0" />
-                  <test-case name="SHES_ConsolAppTest.BatterySHESImplementTest.MyInfoBadParameters(5,100)" executed="True" result="Success" success="True" time="0.001" asserts="0" />
-                  <test-case name="SHES_ConsolAppTest.BatterySHESImplementTest.MyInfoBadParameters(5,-1000)" executed="True" result="Success" success="True" time="0.001" asserts="0" />
-                  <test-case name="SHES_ConsolAppTest.BatterySHESImplementTest.MyInfoBadParameters(5,1000)" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                  <test-case name="SHES_ConsolAppTest.BatterySHESImplementTest.MyInfoBadParameters(5,-1)" executed="True" result="Success" success="True" time="0.055" asserts="0" />
+                  <test-case name="SHES_ConsolAppTest.BatterySHESImplementTest.MyInfoBadParameters(5,3)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                  <test-case name="SHES_ConsolAppTest.BatterySHESImplementTest.MyInfoBadParameters(5,-100)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                  <test-case name="SHES_ConsolAppTest.BatterySHESImplementTest.MyInfoBadParameters(5,100)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                  <test-case name="SHES_ConsolAppTest.BatterySHESImplementTest.MyInfoBadParameters(5,-1000)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                  <test-case name="SHES_ConsolAppTest.BatterySHESImplementTest.MyInfoBadParameters(5,1000)" executed="True" result="Success" success="True" time="0.003" asserts="0" />
                 </results>
               </test-suite>
-              <test-suite type="ParameterizedTest" name="MyInfoGoodParameters" executed="True" result="Success" success="True" time="0.011" asserts="0">
+              <test-suite type="ParameterizedTest" name="MyInfoGoodParameters" executed="True" result="Success" success="True" time="0.017" asserts="0">
                 <results>
                   <test-case name="SHES_ConsolAppTest.BatterySHESImplementTest.MyInfoGoodParameters(5,0)" executed="True" result="Success" success="True" time="0.001" asserts="0" />
                   <test-case name="SHES_ConsolAppTest.BatterySHESImplementTest.MyInfoGoodParameters(5,1)" executed="True" result="Success" success="True" time="0.000" asserts="0" />
@@ -28,39 +28,39 @@
               </test-suite>
             </results>
           </test-suite>
-          <test-suite type="TestFixture" name="BatteryTest" executed="True" result="Success" success="True" time="0.179" asserts="0">
+          <test-suite type="TestFixture" name="BatteryTest" executed="True" result="Success" success="True" time="0.263" asserts="0">
             <results>
-              <test-suite type="ParameterizedTest" name="BatteryCheckValidationAllGoodParameters" executed="True" result="Success" success="True" time="0.029" asserts="0">
+              <test-suite type="ParameterizedTest" name="BatteryCheckValidationAllGoodParameters" executed="True" result="Success" success="True" time="0.044" asserts="0">
                 <results>
-                  <test-case name="SHES_ConsolAppTest.BatteryTest.BatteryCheckValidationAllGoodParameters(&quot;baterija1&quot;,1,5)" executed="True" result="Success" success="True" time="0.005" asserts="0" />
+                  <test-case name="SHES_ConsolAppTest.BatteryTest.BatteryCheckValidationAllGoodParameters(&quot;baterija1&quot;,1,5)" executed="True" result="Success" success="True" time="0.009" asserts="0" />
                   <test-case name="SHES_ConsolAppTest.BatteryTest.BatteryCheckValidationAllGoodParameters(&quot;baterija2&quot;,3,3)" executed="True" result="Success" success="True" time="0.000" asserts="0" />
                   <test-case name="SHES_ConsolAppTest.BatteryTest.BatteryCheckValidationAllGoodParameters(&quot;baterija1&quot;,1,7)" executed="True" result="Success" success="True" time="0.000" asserts="0" />
                   <test-case name="SHES_ConsolAppTest.BatteryTest.BatteryCheckValidationAllGoodParameters(&quot;baterija3&quot;,3,4)" executed="True" result="Success" success="True" time="0.000" asserts="0" />
                   <test-case name="SHES_ConsolAppTest.BatteryTest.BatteryCheckValidationAllGoodParameters(&quot;baterija4&quot;,3,4)" executed="True" result="Success" success="True" time="0.000" asserts="0" />
-                  <test-case name="SHES_ConsolAppTest.BatteryTest.BatteryCheckValidationAllGoodParameters(&quot;baterija5&quot;,9,9)" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="SHES_ConsolAppTest.BatteryTest.BatteryCheckValidationAllGoodParameters(&quot;baterija5&quot;,9,9)" executed="True" result="Success" success="True" time="0.001" asserts="0" />
                   <test-case name="SHES_ConsolAppTest.BatteryTest.BatteryCheckValidationAllGoodParameters(&quot;baterija1000&quot;,1,1)" executed="True" result="Success" success="True" time="0.000" asserts="0" />
                 </results>
               </test-suite>
-              <test-suite type="ParameterizedTest" name="BatteryCheckValidationBorderNameParameter" executed="True" result="Success" success="True" time="0.017" asserts="0">
+              <test-suite type="ParameterizedTest" name="BatteryCheckValidationBorderNameParameter" executed="True" result="Success" success="True" time="0.023" asserts="0">
                 <results>
-                  <test-case name="SHES_ConsolAppTest.BatteryTest.BatteryCheckValidationBorderNameParameter(&quot;a&quot;,1,5)" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="SHES_ConsolAppTest.BatteryTest.BatteryCheckValidationBorderNameParameter(&quot;a&quot;,1,5)" executed="True" result="Success" success="True" time="0.001" asserts="0" />
                   <test-case name="SHES_ConsolAppTest.BatteryTest.BatteryCheckValidationBorderNameParameter(&quot;asrdasdasd2&quot;,3,3)" executed="True" result="Success" success="True" time="0.000" asserts="0" />
                   <test-case name="SHES_ConsolAppTest.BatteryTest.BatteryCheckValidationBorderNameParameter(&quot;r&quot;,1,7)" executed="True" result="Success" success="True" time="0.000" asserts="0" />
                   <test-case name="SHES_ConsolAppTest.BatteryTest.BatteryCheckValidationBorderNameParameter(&quot;zzzzzzzzzzzzzzzzzzzzzzzzzzz&quot;,3,4)" executed="True" result="Success" success="True" time="0.000" asserts="0" />
                   <test-case name="SHES_ConsolAppTest.BatteryTest.BatteryCheckValidationBorderNameParameter(&quot;3&quot;,3,4)" executed="True" result="Success" success="True" time="0.000" asserts="0" />
                 </results>
               </test-suite>
-              <test-suite type="ParameterizedTest" name="BatteryCheckValidationCapacityInvalid" executed="True" result="Success" success="True" time="0.016" asserts="0">
+              <test-suite type="ParameterizedTest" name="BatteryCheckValidationCapacityInvalid" executed="True" result="Success" success="True" time="0.021" asserts="0">
                 <results>
-                  <test-case name="SHES_ConsolAppTest.BatteryTest.BatteryCheckValidationCapacityInvalid(&quot;duracel&quot;,-1,5)" executed="True" result="Success" success="True" time="0.001" asserts="0" />
-                  <test-case name="SHES_ConsolAppTest.BatteryTest.BatteryCheckValidationCapacityInvalid(&quot;varta&quot;,0,1)" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                  <test-case name="SHES_ConsolAppTest.BatteryTest.BatteryCheckValidationCapacityInvalid(&quot;duracel&quot;,-1,5)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                  <test-case name="SHES_ConsolAppTest.BatteryTest.BatteryCheckValidationCapacityInvalid(&quot;varta&quot;,0,1)" executed="True" result="Success" success="True" time="0.003" asserts="0" />
                   <test-case name="SHES_ConsolAppTest.BatteryTest.BatteryCheckValidationCapacityInvalid(&quot;duracel&quot;,11,5)" executed="True" result="Success" success="True" time="0.001" asserts="0" />
-                  <test-case name="SHES_ConsolAppTest.BatteryTest.BatteryCheckValidationCapacityInvalid(&quot;varta&quot;,100,3)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                  <test-case name="SHES_ConsolAppTest.BatteryTest.BatteryCheckValidationCapacityInvalid(&quot;varta&quot;,100,3)" executed="True" result="Success" success="True" time="0.001" asserts="0" />
                 </results>
               </test-suite>
-              <test-suite type="ParameterizedTest" name="BatteryCheckValidationGoodParameters" executed="True" result="Success" success="True" time="0.021" asserts="0">
+              <test-suite type="ParameterizedTest" name="BatteryCheckValidationGoodParameters" executed="True" result="Success" success="True" time="0.030" asserts="0">
                 <results>
-                  <test-case name="SHES_ConsolAppTest.BatteryTest.BatteryCheckValidationGoodParameters(&quot;duracel&quot;,4,5)" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="SHES_ConsolAppTest.BatteryTest.BatteryCheckValidationGoodParameters(&quot;duracel&quot;,4,5)" executed="True" result="Success" success="True" time="0.001" asserts="0" />
                   <test-case name="SHES_ConsolAppTest.BatteryTest.BatteryCheckValidationGoodParameters(&quot;varta&quot;,1,9)" executed="True" result="Success" success="True" time="0.000" asserts="0" />
                   <test-case name="SHES_ConsolAppTest.BatteryTest.BatteryCheckValidationGoodParameters(&quot;duracel&quot;,4,6)" executed="True" result="Success" success="True" time="0.000" asserts="0" />
                   <test-case name="SHES_ConsolAppTest.BatteryTest.BatteryCheckValidationGoodParameters(&quot;varta&quot;,4,4)" executed="True" result="Success" success="True" time="0.000" asserts="0" />
@@ -69,18 +69,18 @@
                   <test-case name="SHES_ConsolAppTest.BatteryTest.BatteryCheckValidationGoodParameters(&quot;duracel&quot;,9,1)" executed="True" result="Success" success="True" time="0.000" asserts="0" />
                 </results>
               </test-suite>
-              <test-suite type="ParameterizedTest" name="BatteryCheckValidationMaxPowerInvalid" executed="True" result="Success" success="True" time="0.015" asserts="0">
+              <test-suite type="ParameterizedTest" name="BatteryCheckValidationMaxPowerInvalid" executed="True" result="Success" success="True" time="0.027" asserts="0">
                 <results>
-                  <test-case name="SHES_ConsolAppTest.BatteryTest.BatteryCheckValidationMaxPowerInvalid(&quot;duracel&quot;,4,-1)" executed="True" result="Success" success="True" time="0.001" asserts="0" />
-                  <test-case name="SHES_ConsolAppTest.BatteryTest.BatteryCheckValidationMaxPowerInvalid(&quot;varta&quot;,0,-100)" executed="True" result="Success" success="True" time="0.001" asserts="0" />
-                  <test-case name="SHES_ConsolAppTest.BatteryTest.BatteryCheckValidationMaxPowerInvalid(&quot;duracel&quot;,4,100)" executed="True" result="Success" success="True" time="0.001" asserts="0" />
-                  <test-case name="SHES_ConsolAppTest.BatteryTest.BatteryCheckValidationMaxPowerInvalid(&quot;varta&quot;,2,11)" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                  <test-case name="SHES_ConsolAppTest.BatteryTest.BatteryCheckValidationMaxPowerInvalid(&quot;duracel&quot;,4,-1)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                  <test-case name="SHES_ConsolAppTest.BatteryTest.BatteryCheckValidationMaxPowerInvalid(&quot;varta&quot;,0,-100)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                  <test-case name="SHES_ConsolAppTest.BatteryTest.BatteryCheckValidationMaxPowerInvalid(&quot;duracel&quot;,4,100)" executed="True" result="Success" success="True" time="0.004" asserts="0" />
+                  <test-case name="SHES_ConsolAppTest.BatteryTest.BatteryCheckValidationMaxPowerInvalid(&quot;varta&quot;,2,11)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
                 </results>
               </test-suite>
-              <test-suite type="ParameterizedTest" name="BatteryCheckValidationNameAlreadyExists" executed="True" result="Success" success="True" time="0.035" asserts="0">
+              <test-suite type="ParameterizedTest" name="BatteryCheckValidationNameAlreadyExists" executed="True" result="Success" success="True" time="0.046" asserts="0">
                 <results>
-                  <test-case name="SHES_ConsolAppTest.BatteryTest.BatteryCheckValidationNameAlreadyExists(&quot;duracel&quot;,1,5)" executed="True" result="Success" success="True" time="0.001" asserts="0" />
-                  <test-case name="SHES_ConsolAppTest.BatteryTest.BatteryCheckValidationNameAlreadyExists(&quot;duracel&quot;,3,3)" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                  <test-case name="SHES_ConsolAppTest.BatteryTest.BatteryCheckValidationNameAlreadyExists(&quot;duracel&quot;,1,5)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                  <test-case name="SHES_ConsolAppTest.BatteryTest.BatteryCheckValidationNameAlreadyExists(&quot;duracel&quot;,3,3)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
                   <test-case name="SHES_ConsolAppTest.BatteryTest.BatteryCheckValidationNameAlreadyExists(&quot;duracel&quot;,1,7)" executed="True" result="Success" success="True" time="0.001" asserts="0" />
                   <test-case name="SHES_ConsolAppTest.BatteryTest.BatteryCheckValidationNameAlreadyExists(&quot;duracel&quot;,3,4)" executed="True" result="Success" success="True" time="0.001" asserts="0" />
                   <test-case name="SHES_ConsolAppTest.BatteryTest.BatteryCheckValidationNameAlreadyExists(&quot;varta&quot;,3,4)" executed="True" result="Success" success="True" time="0.001" asserts="0" />
@@ -88,12 +88,37 @@
                   <test-case name="SHES_ConsolAppTest.BatteryTest.BatteryCheckValidationNameAlreadyExists(&quot;varta&quot;,1,1)" executed="True" result="Success" success="True" time="0.001" asserts="0" />
                 </results>
               </test-suite>
-              <test-suite type="ParameterizedTest" name="BatteryCheckValidationNameIsNullorEmpty" executed="True" result="Success" success="True" time="0.016" asserts="0">
+              <test-suite type="ParameterizedTest" name="BatteryCheckValidationNameIsNullorEmpty" executed="True" result="Success" success="True" time="0.024" asserts="0">
                 <results>
-                  <test-case name="SHES_ConsolAppTest.BatteryTest.BatteryCheckValidationNameIsNullorEmpty(null,3,5)" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                  <test-case name="SHES_ConsolAppTest.BatteryTest.BatteryCheckValidationNameIsNullorEmpty(null,3,5)" executed="True" result="Success" success="True" time="0.004" asserts="0" />
                   <test-case name="SHES_ConsolAppTest.BatteryTest.BatteryCheckValidationNameIsNullorEmpty(null,7,1)" executed="True" result="Success" success="True" time="0.001" asserts="0" />
                   <test-case name="SHES_ConsolAppTest.BatteryTest.BatteryCheckValidationNameIsNullorEmpty(&quot;&quot;,7,5)" executed="True" result="Success" success="True" time="0.001" asserts="0" />
                   <test-case name="SHES_ConsolAppTest.BatteryTest.BatteryCheckValidationNameIsNullorEmpty(&quot;&quot;,9,3)" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="SolarPanelSHESImplementTest" executed="True" result="Success" success="True" time="0.067" asserts="0">
+            <results>
+              <test-suite type="ParameterizedTest" name="MyInfoBadParameters" executed="True" result="Success" success="True" time="0.017" asserts="0">
+                <results>
+                  <test-case name="SHES_ConsolAppTest.SolarPanelSHESImplementTest.MyInfoBadParameters(-1)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                  <test-case name="SHES_ConsolAppTest.SolarPanelSHESImplementTest.MyInfoBadParameters(-100)" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                  <test-case name="SHES_ConsolAppTest.SolarPanelSHESImplementTest.MyInfoBadParameters(-1000)" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                </results>
+              </test-suite>
+              <test-suite type="ParameterizedTest" name="MyInfoBorderParameters" executed="True" result="Success" success="True" time="0.002" asserts="0">
+                <results>
+                  <test-case name="SHES_ConsolAppTest.SolarPanelSHESImplementTest.MyInfoBorderParameters(0)" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                </results>
+              </test-suite>
+              <test-suite type="ParameterizedTest" name="MyInfoGoodParameters" executed="True" result="Success" success="True" time="0.033" asserts="0">
+                <results>
+                  <test-case name="SHES_ConsolAppTest.SolarPanelSHESImplementTest.MyInfoGoodParameters(1)" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                  <test-case name="SHES_ConsolAppTest.SolarPanelSHESImplementTest.MyInfoGoodParameters(2)" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="SHES_ConsolAppTest.SolarPanelSHESImplementTest.MyInfoGoodParameters(5)" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="SHES_ConsolAppTest.SolarPanelSHESImplementTest.MyInfoGoodParameters(7)" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="SHES_ConsolAppTest.SolarPanelSHESImplementTest.MyInfoGoodParameters(9)" executed="True" result="Success" success="True" time="0.000" asserts="0" />
                 </results>
               </test-suite>
             </results>
