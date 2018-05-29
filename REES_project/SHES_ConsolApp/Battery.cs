@@ -18,6 +18,8 @@ namespace SHES_ConsolApp
             Console.WriteLine("Insert number of batteries: ");
             int numberButteries = Int32.Parse(Console.ReadLine());
 
+            Console.WriteLine(@"------------------------------------
+************************************");
             for (int i = 0; i < numberButteries; i++)
             {
                 Console.WriteLine("Insert name of battery: ");
@@ -35,6 +37,8 @@ namespace SHES_ConsolApp
                 }
                 
             }
+            Console.WriteLine(@"************************************
+------------------------------------");
         }
 
         public bool CheckValidation(string name, double capacity, double maxPower,Dictionary<string,double[]> dict)

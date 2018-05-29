@@ -1,3 +1,15 @@
+C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\BatteryTest\bin\Debug\BatteryTest.dll
+C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\BatteryTest\bin\Debug\BatteryTest.pdb
+C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\BatteryTest\bin\Debug\Battery.exe
+C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\BatteryTest\bin\Debug\Contracts.dll
+C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\BatteryTest\bin\Debug\Battery.pdb
+C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\BatteryTest\bin\Debug\Battery.exe.config
+C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\BatteryTest\bin\Debug\Contracts.pdb
+C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\BatteryTest\obj\Debug\BatteryTest.csprojResolveAssemblyReference.cache
+C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\BatteryTest\obj\Debug\BatteryTest.csproj.CoreCompileInputs.cache
+C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\BatteryTest\obj\Debug\BatteryTest.csproj.CopyComplete
+C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\BatteryTest\obj\Debug\BatteryTest.dll
+C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\BatteryTest\obj\Debug\BatteryTest.pdb
 C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\BatteryTest\bin\Debug\BatteryTest.dll
 C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\BatteryTest\bin\Debug\BatteryTest.pdb
 C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\BatteryTest\bin\Debug\Battery.exe
@@ -11,15 +23,3 @@ C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\BatteryTest\obj\
 C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\BatteryTest\obj\Debug\BatteryTest.csproj.CopyComplete
 C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\BatteryTest\obj\Debug\BatteryTest.dll
 C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\BatteryTest\obj\Debug\BatteryTest.pdb
-C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\BatteryTest\bin\Debug\BatteryTest.dll
-C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\BatteryTest\bin\Debug\BatteryTest.pdb
-C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\BatteryTest\bin\Debug\Battery.exe
-C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\BatteryTest\bin\Debug\Contracts.dll
-C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\BatteryTest\bin\Debug\Battery.pdb
-C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\BatteryTest\bin\Debug\Battery.exe.config
-C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\BatteryTest\bin\Debug\Contracts.pdb
-C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\BatteryTest\obj\Debug\BatteryTest.csprojResolveAssemblyReference.cache
-C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\BatteryTest\obj\Debug\BatteryTest.csproj.CoreCompileInputs.cache
-C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\BatteryTest\obj\Debug\BatteryTest.csproj.CopyComplete
-C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\BatteryTest\obj\Debug\BatteryTest.dll
-C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\BatteryTest\obj\Debug\BatteryTest.pdb

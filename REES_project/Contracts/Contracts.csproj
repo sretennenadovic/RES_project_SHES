@@ -43,11 +43,13 @@
   <ItemGroup>
     <Compile Include="AddingProjects\IAddBattery.cs" />
     <Compile Include="AddingProjects\IAdding.cs" />
+    <Compile Include="AddingProjects\IAddSolarPanel.cs" />
     <Compile Include="BatteryConnection\IBattery.cs" />
     <Compile Include="BatteryConnection\IBatterySHES.cs" />
     <Compile Include="SolarPanelConnection\ISolarPanel.cs" />
     <Compile Include="SolarPanelConnection\ISolarPanelSHES.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UtilityConnection\IUtility.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

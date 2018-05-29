@@ -27,6 +27,9 @@ namespace SHES_ConsolApp
             {
                 throw new ArgumentException("Invalid state!");
             }
+
+            //proba
+            Program.baterija = capacity;
         }
     }
 }

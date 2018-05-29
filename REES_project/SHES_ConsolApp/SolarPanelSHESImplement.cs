@@ -16,6 +16,8 @@ namespace SHES_ConsolApp
                 throw new ArgumentException("Invalid power value!");
             }
             Console.WriteLine("Snaga svih panela je: {0}", power);
+            //proba
+            Program.paneli = power;
         }
     }
 }

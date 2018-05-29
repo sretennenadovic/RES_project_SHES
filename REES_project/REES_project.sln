@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BatteryTest", "BatteryTest\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolarPanelTest", "SolarPanelTest\SolarPanelTest.csproj", "{A1543399-D8D7-42EB-844F-3EF9FF36BAAD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utility", "Utility\Utility.csproj", "{6FC63988-FE09-4B0E-9BAB-2703F90A2445}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UtilityTest", "UtilityTest\UtilityTest.csproj", "{78990516-1DD4-4863-A635-3B9B7E522997}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +61,14 @@ Global
 		{A1543399-D8D7-42EB-844F-3EF9FF36BAAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1543399-D8D7-42EB-844F-3EF9FF36BAAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1543399-D8D7-42EB-844F-3EF9FF36BAAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FC63988-FE09-4B0E-9BAB-2703F90A2445}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FC63988-FE09-4B0E-9BAB-2703F90A2445}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FC63988-FE09-4B0E-9BAB-2703F90A2445}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FC63988-FE09-4B0E-9BAB-2703F90A2445}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78990516-1DD4-4863-A635-3B9B7E522997}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78990516-1DD4-4863-A635-3B9B7E522997}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78990516-1DD4-4863-A635-3B9B7E522997}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78990516-1DD4-4863-A635-3B9B7E522997}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

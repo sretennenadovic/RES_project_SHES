@@ -11,13 +11,16 @@ namespace SolarPanel
 {
     class Program
     {
-        static ServiceHost sh = new ServiceHost(typeof(SolarPanelImplement));
+        #region Fields
+        public static ServiceHost sh = new ServiceHost(typeof(SolarPanelImplement));
         public static Dictionary<string, double> panels = new Dictionary<string, double>();
         public static bool ready = false;
         public static ISolarPanelSHES proxy;
+        public static ConnectionClass connectionClass = new ConnectionClass();
+        #endregion Fields
         static void Main(string[] args)
         {
-            OpenConnectionToSHES();
+            connectionClass.OpenConnectionToSHES();
             while (true)
             {
                 if (ready)
@@ -30,19 +33,7 @@ namespace SolarPanel
             Console.ReadKey(); 
         }
 
-        private static void OpenConnectionToSHES()
-        {
-            //dizemo servis na bateriji
-            sh.AddServiceEndpoint(typeof(ISolarPanel), new NetTcpBinding(), new Uri("net.tcp://localhost:10030/ISolarPanel"));
-            sh.Open();
-
-            //konekcija ka serveru shes2
-            ChannelFactory<ISolarPanelSHES> cf1 = new ChannelFactory<ISolarPanelSHES>(new NetTcpBinding(), new EndpointAddress("net.tcp://localhost:10040/ISolarPanelSHES"));
-            proxy = cf1.CreateChannel();
-
-            Console.WriteLine("Otvorena konekcija prema SHES-u!");
-        }
-
+        #region DoWork
         private static void RadiPosao()
         {
             Task t1 = Task.Factory.StartNew(() =>
@@ -88,5 +79,6 @@ namespace SolarPanel
                 }
             });
         }
+        #endregion DoWork
     }
 }

@@ -15,18 +15,20 @@ namespace Battery
         #region Fileds
         public enum States : int { PUNJENJE=0,PRAZNJENJE=1,ISKLJUCENA=2};
 
-        static ServiceHost sh = new ServiceHost(typeof(BatteryImplement));
+        public static ServiceHost sh = new ServiceHost(typeof(BatteryImplement));
         public static IBatterySHES proxy;
         public static Dictionary<string, double[]> batteries = new Dictionary<string, double []>();
         public static bool ready = false;
         public static int counter = 0;
         public static States state = States.ISKLJUCENA;
         static object _lock = new object();
+
+        public static ConnectionClass connectionClass = new ConnectionClass();
         #endregion Fileds
 
         static void Main(string[] args)
         {
-            OpenConnectionToSHES();
+            connectionClass.OpenConnectionToSHES();
 
             while (true)
             {
@@ -41,27 +43,6 @@ namespace Battery
             Console.ReadKey();
 
         }
-
-        #region OpenConnectionSHES
-        private static void OpenConnectionToSHES()
-        {
-            //dizemo servis na bateriji
-            sh.AddServiceEndpoint(typeof(IBattery), new NetTcpBinding(), new Uri("net.tcp://localhost:10020/IBattery"));
-            sh.Open();
-
-            //konekcija ka serveru shes2
-            ChannelFactory<IBatterySHES> cf1 = new ChannelFactory<IBatterySHES>(new NetTcpBinding(), new EndpointAddress("net.tcp://localhost:10010/IBatterySHES"));
-            try
-            {
-                proxy = cf1.CreateChannel();
-                Console.WriteLine("Otvorena konekcija prema SHES-u!");
-            }
-            catch(Exception e)
-            {
-                Console.WriteLine(e.Message);
-            }
-        }
-        #endregion OpenConnectionSHES
 
         #region KeepState
         private static void OdrzavajStanje()
@@ -139,7 +120,7 @@ namespace Battery
                     foreach (KeyValuePair<string,double[]> item in batteries)
                     {
                         lock(_lock){
-                        //prvo u listi se nalazi KAPACITET, i samo njega sabiramo
+                        //prvo u nizu se nalazi KAPACITET, i samo njega sabiramo
                         rez += item.Value[0];
                         }
                     }
