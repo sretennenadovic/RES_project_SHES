@@ -48,6 +48,8 @@
   <ItemGroup>
     <Compile Include="BatterySHESImplementTest.cs" />
     <Compile Include="BatteryTest.cs" />
+    <Compile Include="ConsumerSHESImplementTest.cs" />
+    <Compile Include="ConsumerTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SolarPanelSHESImplementTest.cs" />
     <Compile Include="SolarPanelTest.cs" />

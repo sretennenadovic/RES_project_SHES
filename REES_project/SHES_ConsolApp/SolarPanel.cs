@@ -43,7 +43,7 @@ namespace SHES_ConsolApp
                 ret = false;
                 throw new ArgumentException("Name can't be null or empty!");
             }
-            if (maxPower < 0 || maxPower > 10)
+            if (maxPower < 0 || maxPower > 40)
             {
                 ret = false;
                 throw new ArgumentException("Max power is invalid number!");

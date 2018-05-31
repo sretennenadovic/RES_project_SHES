@@ -1,4 +1,5 @@
 ﻿using Contracts;
+using Contracts.ConsumerConnection;
 using Contracts.UtilityConnection;
 using System;
 using System.Collections.Generic;
@@ -17,22 +18,32 @@ namespace SHES_ConsolApp
         public static IBattery proxyBattery;
         public static ISolarPanel proxyPanel;
         public static IUtility proxyUtility;
+        public static IConsumer proxyConsumer;
         #endregion Proxies
         #region Dictionaries
         public static Dictionary<string, double> addSolarPanels = new Dictionary<string, double>();
         public static Dictionary<string, double[]> addBatteries = new Dictionary<string, double[]>();
+        public static Dictionary<string, double> addConsumers = new Dictionary<string, double>();
         #endregion Dictionaries
         #region ServiceHosts
         static ServiceHost sh1 = new ServiceHost(typeof(BatterySHESImplement));
         static ServiceHost sh2 = new ServiceHost(typeof(SolarPanelSHESImplement));
+        static ServiceHost sh3 = new ServiceHost(typeof(ConsumerSHESImplement));
         #endregion ServiceHosts
+        public enum States : int { PUNJENJE = 0, PRAZNJENJE = 1, ISKLJUCENA = 2 };
+        public static States state = States.ISKLJUCENA;
+        public static Object obj = new object();
+
         static Battery battery = new Battery();
         static SolarPanel panel = new SolarPanel();
+        static Consumer consumer = new Consumer();
 
-        //proba
-        public static double baterija = 0;
-        public static double paneli = 0;
-
+        #region PomValues
+        public static double batteryPom = 0;
+        public static double panelPom = 0;
+        public static double consumerPom = 0;
+        public static double price = 0;
+        #endregion
         static void Main(string[] args)
         {
             StartProcesses();
@@ -43,22 +54,66 @@ namespace SHES_ConsolApp
             //izmestiti negde
             proxyBattery.ListBatteries(addBatteries, true);
             proxyPanel.listSolarPanels(addSolarPanels, true);
+            proxyConsumer.ListConsumers(addConsumers, true);
             //izmestiti negde
 
             DoWork();
-
+            Count();
             //ovo ce ici u task ili while true
-       
 
-
-            while (true)
-            {
-                Console.WriteLine("Novaccccccccccccccccccccccccc je:" + proxyUtility.CalculateMoney(baterija+paneli).ToString());
-                Thread.Sleep(1000);
-            }
-            //task
 
             Console.ReadKey();
+        }
+
+        private static void Count()
+        {
+            Task t = Task.Factory.StartNew(() =>
+            {
+                while (true)
+                {
+                    Thread.Sleep(1000);
+                    if (batteryPom != 0)
+                    {
+                        
+
+                        double value = 0;
+
+                        double panelPom2 = panelPom;
+                        double consumerPom2 = consumerPom;
+                        double batteryPom2 = batteryPom;
+
+                        lock (obj)
+                        {
+                            panelPom = 0;
+                            consumerPom = 0;
+                            batteryPom = 0;
+                        }
+
+                        Console.WriteLine(state.ToString());
+
+                        if (state == States.ISKLJUCENA)
+                        {
+                            value = panelPom2 - consumerPom2;
+                            price = proxyUtility.CalculateMoney(value);
+                            Console.WriteLine("Panel: " + panelPom2 + " baterija: " + batteryPom2 + " potrosaci: " + consumerPom2);
+                        }
+                        else if (state == States.PRAZNJENJE)
+                        {
+                            value = panelPom2 + batteryPom2 - consumerPom2;
+                            price = proxyUtility.CalculateMoney(value);
+                            //Console.WriteLine("Panel: " + panelPom2 + " baterija: " + batteryPom2 + " potrosaci: " + consumerPom2);
+                        }
+                        else
+                        {
+                            value = panelPom2 - batteryPom2 - consumerPom2;
+                            price = proxyUtility.CalculateMoney(value);
+                            //Console.WriteLine("Panel: " + panelPom2 + " baterija: " + batteryPom2 + " potrosaci: " + consumerPom2);
+                        }
+
+                        Console.WriteLine("Trenutna cena je: " + price);
+                    }
+                }
+            });
         }
 
         #region Some Job
@@ -92,6 +147,7 @@ namespace SHES_ConsolApp
         {
             battery.Add();
             panel.Add();
+            consumer.Add();
         }
         #endregion method for adding components in system
 
@@ -101,6 +157,7 @@ namespace SHES_ConsolApp
             StartBatteryProcess();
             StartSolarPanelProcess();
             StartUtilityProcess();
+            StartConsumerProcess();
         }
         
         private static void StartBatteryProcess()
@@ -126,6 +183,14 @@ namespace SHES_ConsolApp
             p3.StartInfo.FileName = @"..\..\..\Utility\bin\Debug\Utility.exe";
             p3.Start();
         }
+
+        private static void StartConsumerProcess()
+        {
+            //Pokrecemo Consumer projekat
+            Process p4 = new Process();
+            p4.StartInfo.FileName = @"..\..\..\Consumer\bin\Debug\Consumer.exe";
+            p4.Start();
+        }
         #endregion Starting processes
 
         #region Opening connections
@@ -134,6 +199,7 @@ namespace SHES_ConsolApp
             OpenConnectionForBattery();
             OpenConnectionForSolarPanel();
             OpenConnectionForUtility();
+            OpenConnectionForConsumer();
 
         }
 
@@ -161,15 +227,28 @@ namespace SHES_ConsolApp
 
         private static void OpenConnectionForSolarPanel()
         {
-            //Otvaranje servisa za bateriju
+            //Otvaranje servisa za Solarni panel
             sh2.AddServiceEndpoint(typeof(ISolarPanelSHES), new NetTcpBinding(), new Uri("net.tcp://localhost:10040/ISolarPanelSHES"));
             sh2.Open();
 
-            //Otvaranje kanala ka bateriji
+            //Otvaranje kanala ka Solarnom panelu
             ChannelFactory<ISolarPanel> cf1 = new ChannelFactory<ISolarPanel>(new NetTcpBinding(), new EndpointAddress("net.tcp://localhost:10030/ISolarPanel"));
             proxyPanel = cf1.CreateChannel();
 
             Console.WriteLine("Connected with solar panel!");
+        }
+
+        private static void OpenConnectionForConsumer()
+        {
+            //Otvaranje servisa za Consumera
+            sh3.AddServiceEndpoint(typeof(IConsumerSHES), new NetTcpBinding(), new Uri("net.tcp://localhost:10070/IConsumerSHES"));
+            sh3.Open();
+
+            //Otvaranje kanala ka Consumeru
+            ChannelFactory<IConsumer> cf1 = new ChannelFactory<IConsumer>(new NetTcpBinding(), new EndpointAddress("net.tcp://localhost:10060/IConsumer"));
+            proxyConsumer = cf1.CreateChannel();
+
+            Console.WriteLine("Connected with consumer!");
         }
         #endregion Opening connections
     }

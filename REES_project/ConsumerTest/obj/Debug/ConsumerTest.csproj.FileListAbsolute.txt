@@ -1,0 +1,13 @@
+C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\ConsumerTest\bin\Debug\ConsumerTest.dll
+C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\ConsumerTest\bin\Debug\ConsumerTest.pdb
+C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\ConsumerTest\bin\Debug\Consumer.exe
+C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\ConsumerTest\bin\Debug\nunit.framework.dll
+C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\ConsumerTest\bin\Debug\Contracts.dll
+C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\ConsumerTest\bin\Debug\Consumer.pdb
+C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\ConsumerTest\bin\Debug\Consumer.exe.config
+C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\ConsumerTest\bin\Debug\Contracts.pdb
+C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\ConsumerTest\obj\Debug\ConsumerTest.csprojResolveAssemblyReference.cache
+C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\ConsumerTest\obj\Debug\ConsumerTest.csproj.CoreCompileInputs.cache
+C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\ConsumerTest\obj\Debug\ConsumerTest.csproj.CopyComplete
+C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\ConsumerTest\obj\Debug\ConsumerTest.dll
+C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\ConsumerTest\obj\Debug\ConsumerTest.pdb

@@ -1,15 +1,3 @@
-C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SHES_ConsolAppTest\bin\Debug\SHES_ConsolAppTest.dll
-C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SHES_ConsolAppTest\bin\Debug\SHES_ConsolAppTest.pdb
-C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SHES_ConsolAppTest\bin\Debug\Contracts.dll
-C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SHES_ConsolAppTest\bin\Debug\SHES_ConsolApp.exe
-C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SHES_ConsolAppTest\bin\Debug\Contracts.pdb
-C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SHES_ConsolAppTest\bin\Debug\SHES_ConsolApp.pdb
-C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SHES_ConsolAppTest\bin\Debug\SHES_ConsolApp.exe.config
-C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SHES_ConsolAppTest\obj\Debug\SHES_ConsolAppTest.csprojResolveAssemblyReference.cache
-C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SHES_ConsolAppTest\obj\Debug\SHES_ConsolAppTest.csproj.CoreCompileInputs.cache
-C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SHES_ConsolAppTest\obj\Debug\SHES_ConsolAppTest.csproj.CopyComplete
-C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SHES_ConsolAppTest\obj\Debug\SHES_ConsolAppTest.dll
-C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SHES_ConsolAppTest\obj\Debug\SHES_ConsolAppTest.pdb
 C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\SHES_ConsolAppTest\bin\Debug\SHES_ConsolAppTest.dll
 C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\SHES_ConsolAppTest\bin\Debug\SHES_ConsolAppTest.pdb
 C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\SHES_ConsolAppTest\bin\Debug\Contracts.dll
@@ -24,3 +12,15 @@ C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\SHES_ConsolAppTe
 C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\SHES_ConsolAppTest\obj\Debug\SHES_ConsolAppTest.csproj.CopyComplete
 C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\SHES_ConsolAppTest\obj\Debug\SHES_ConsolAppTest.dll
 C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\SHES_ConsolAppTest\obj\Debug\SHES_ConsolAppTest.pdb
+C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SHES_ConsolAppTest\bin\Debug\SHES_ConsolAppTest.dll
+C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SHES_ConsolAppTest\bin\Debug\SHES_ConsolAppTest.pdb
+C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SHES_ConsolAppTest\bin\Debug\Contracts.dll
+C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SHES_ConsolAppTest\bin\Debug\SHES_ConsolApp.exe
+C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SHES_ConsolAppTest\bin\Debug\Contracts.pdb
+C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SHES_ConsolAppTest\bin\Debug\SHES_ConsolApp.pdb
+C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SHES_ConsolAppTest\bin\Debug\SHES_ConsolApp.exe.config
+C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SHES_ConsolAppTest\obj\Debug\SHES_ConsolAppTest.csprojResolveAssemblyReference.cache
+C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SHES_ConsolAppTest\obj\Debug\SHES_ConsolAppTest.csproj.CoreCompileInputs.cache
+C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SHES_ConsolAppTest\obj\Debug\SHES_ConsolAppTest.csproj.CopyComplete
+C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SHES_ConsolAppTest\obj\Debug\SHES_ConsolAppTest.dll
+C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SHES_ConsolAppTest\obj\Debug\SHES_ConsolAppTest.pdb

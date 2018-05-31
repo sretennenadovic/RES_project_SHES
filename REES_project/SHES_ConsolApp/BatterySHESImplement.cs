@@ -9,27 +9,42 @@ namespace SHES_ConsolApp
 {
     public class BatterySHESImplement : IBatterySHES
     {
+        static int counter = 0;
+        static double pom = 0;
         public void MyInfo(double capacity, int state)
         {
-            Console.Write("Kapacitet baterija je: " + capacity + ", a trenutno su u stanju ");
+            counter++;
+            
             if(state == 0)
             {
-                Console.WriteLine("\"punjenja\".");
-            }else if (state == 1)
+                Program.state = Program.States.PUNJENJE;
+            }
+            else if (state == 1)
             {
-                Console.WriteLine("\"praznjenja\".");
+                Program.state = Program.States.PRAZNJENJE;
             }
             else if (state == 2)
             {
-                Console.WriteLine("\"ne radi\".");
+                Program.state = Program.States.ISKLJUCENA;
             }
             else
             {
                 throw new ArgumentException("Invalid state!");
             }
+            
+            pom += capacity;
 
-            //proba
-            Program.baterija = capacity;
+            if (counter == 10)
+            {
+                pom = pom / 10;
+                
+                lock (Program.obj)
+                {
+                    Program.batteryPom = pom;
+                }
+                pom = 0;
+                counter = 0;
+            }
         }
     }
 }

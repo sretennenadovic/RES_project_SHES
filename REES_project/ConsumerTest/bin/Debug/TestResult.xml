@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\ConsumerTest\bin\Debug\ConsumerTest.dll" total="6" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2018-05-31" time="19:02:17">
+  <environment nunit-version="2.6.4.14350" clr-version="2.0.50727.8922" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="C:\Users\Aleksandar\Desktop\Razvoj EES\RES\STARO\NUnit-2.6.4\NUnit-2.6.4\bin" machine-name="ALEKSANDAR" user="Aleksandar" user-domain="ALEKSANDAR" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\ConsumerTest\bin\Debug\ConsumerTest.dll" executed="True" result="Success" success="True" time="0.048" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="ConsumerTest" executed="True" result="Success" success="True" time="0.048" asserts="0">
+        <results>
+          <test-suite type="TestFixture" name="ConsumerImplementTest" executed="True" result="Success" success="True" time="0.047" asserts="0">
+            <results>
+              <test-suite type="ParameterizedTest" name="ListConsumersEmptyDictionary" executed="True" result="Success" success="True" time="0.012" asserts="0">
+                <results>
+                  <test-case name="ConsumerTest.ConsumerImplementTest.ListConsumersEmptyDictionary(0,True)" executed="True" result="Success" success="True" time="0.005" asserts="0" />
+                  <test-case name="ConsumerTest.ConsumerImplementTest.ListConsumersEmptyDictionary(0,False)" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                </results>
+              </test-suite>
+              <test-suite type="ParameterizedTest" name="ListConsumersGoodDictionary" executed="True" result="Success" success="True" time="0.008" asserts="0">
+                <results>
+                  <test-case name="ConsumerTest.ConsumerImplementTest.ListConsumersGoodDictionary(True)" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="ConsumerTest.ConsumerImplementTest.ListConsumersGoodDictionary(False)" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                </results>
+              </test-suite>
+              <test-suite type="ParameterizedTest" name="ListConsumersNullDictionary" executed="True" result="Success" success="True" time="0.012" asserts="0">
+                <results>
+                  <test-case name="ConsumerTest.ConsumerImplementTest.ListConsumersNullDictionary(null,True)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                  <test-case name="ConsumerTest.ConsumerImplementTest.ListConsumersNullDictionary(null,False)" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

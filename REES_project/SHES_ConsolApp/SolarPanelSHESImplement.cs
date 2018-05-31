@@ -9,15 +9,33 @@ namespace SHES_ConsolApp
 {
     public class SolarPanelSHESImplement : ISolarPanelSHES
     {
+
+        static int counter = 0;
+        static double pom = 0;
         public void MyInfo(double power)
         {
+            counter++;
             if(power < 0)
             {
                 throw new ArgumentException("Invalid power value!");
             }
-            Console.WriteLine("Snaga svih panela je: {0}", power);
-            //proba
-            Program.paneli = power;
+            
+            lock (Program.obj)
+            {
+                pom += power;
+
+                if (counter == 10)
+                {
+                    pom = pom / 10;
+
+                    lock (Program.obj)
+                    {
+                        Program.panelPom = pom;
+                    }
+                    pom = 0; counter = 0;
+                }
+
+            }
         }
     }
 }

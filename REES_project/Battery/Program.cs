@@ -61,8 +61,6 @@ namespace Battery
                             foreach (var item in batteries)
                             {
                                 //ne mozemo napuniti bateriju vise nego sto joj je max snaga
-                                if (item.Value[0] < item.Value[1])
-                                {
                                     lock (_lock)
                                     {
                                         //pretvorimo sate kapaciteta u minute, uvecamo za 1, a zatim vratimo u sate
@@ -70,7 +68,7 @@ namespace Battery
                                         item.Value[0] += 1;
                                         item.Value[0] = item.Value[0] / 60;
                                     }
-                                }
+                                
                             }
                         }
                     }
@@ -119,9 +117,9 @@ namespace Battery
                     double rez = 0;
                     foreach (KeyValuePair<string,double[]> item in batteries)
                     {
-                        lock(_lock){
-                        //prvo u nizu se nalazi KAPACITET, i samo njega sabiramo
-                        rez += item.Value[0];
+                        lock(_lock)
+                        {
+                            rez += (item.Value[1] / item.Value[0]);
                         }
                     }
 

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
-  <TopNode>[0-1003]SHES_ConsolAppTest.BatterySHESImplementTest.MyInfoGoodParameters(5,1)</TopNode>
-  <SelectedNode>[0-1097]C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\SHES_ConsolAppTest\bin\Debug\SHES_ConsolAppTest.dll</SelectedNode>
+  <TopNode>[0-1160]C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SHES_ConsolAppTest\bin\Debug\SHES_ConsolAppTest.dll</TopNode>
+  <SelectedNode>[0-1160]C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SHES_ConsolAppTest\bin\Debug\SHES_ConsolAppTest.dll</SelectedNode>
   <ExcludeCategories>false</ExcludeCategories>
   <Nodes>
-    <Node UniqueName="[0-1097]C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\SHES_ConsolAppTest\bin\Debug\SHES_ConsolAppTest.dll" Expanded="true" />
-    <Node UniqueName="[0-1098]SHES_ConsolAppTest" Expanded="true" />
+    <Node UniqueName="[0-1160]C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SHES_ConsolAppTest\bin\Debug\SHES_ConsolAppTest.dll" Expanded="true" />
+    <Node UniqueName="[0-1161]SHES_ConsolAppTest" Expanded="true" />
     <Node UniqueName="[0-1000]SHES_ConsolAppTest.BatterySHESImplementTest" Expanded="true" />
     <Node UniqueName="[0-1005]SHES_ConsolAppTest.BatterySHESImplementTest.MyInfoBadParameters" Expanded="true" />
     <Node UniqueName="[0-1001]SHES_ConsolAppTest.BatterySHESImplementTest.MyInfoGoodParameters" Expanded="true" />
@@ -13,7 +13,7 @@
     <Node UniqueName="[0-1050]SHES_ConsolAppTest.BatteryTest.BatteryCheckValidationAllGoodParameters" Expanded="true" />
     <Node UniqueName="[0-1036]SHES_ConsolAppTest.BatteryTest.BatteryCheckValidationBorderNameParameter" Expanded="true" />
     <Node UniqueName="[0-1042]SHES_ConsolAppTest.BatteryTest.BatteryCheckValidationNameAlreadyExists" Expanded="true" />
-    <Node UniqueName="[0-1071]SHES_ConsolAppTest.SolarPanelTest" Expanded="true" />
-    <Node UniqueName="[0-1072]SHES_ConsolAppTest.SolarPanelTest.ValidationCheckNameIsNullOrEmpty" Expanded="true" />
+    <Node UniqueName="[0-1058]SHES_ConsolAppTest.ConsumerSHESImplementTest" Expanded="true" />
+    <Node UniqueName="[0-1070]SHES_ConsolAppTest.ConsumerSHESImplementTest.MyInfoBadParameters" Expanded="true" />
   </Nodes>
 </VisualState>

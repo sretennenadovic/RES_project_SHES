@@ -1,16 +1,3 @@
-C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SolarPanelTest\bin\Debug\SolarPanelTest.dll
-C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SolarPanelTest\bin\Debug\SolarPanelTest.pdb
-C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SolarPanelTest\bin\Debug\SolarPanel.exe
-C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SolarPanelTest\bin\Debug\Contracts.dll
-C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SolarPanelTest\bin\Debug\SolarPanel.pdb
-C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SolarPanelTest\bin\Debug\SolarPanel.exe.config
-C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SolarPanelTest\bin\Debug\Contracts.pdb
-C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SolarPanelTest\obj\Debug\SolarPanelTest.csprojResolveAssemblyReference.cache
-C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SolarPanelTest\obj\Debug\SolarPanelTest.csproj.CoreCompileInputs.cache
-C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SolarPanelTest\obj\Debug\SolarPanelTest.csproj.CopyComplete
-C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SolarPanelTest\obj\Debug\SolarPanelTest.dll
-C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SolarPanelTest\obj\Debug\SolarPanelTest.pdb
-C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SolarPanelTest\bin\Debug\nunit.framework.dll
 C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\SolarPanelTest\obj\Debug\SolarPanelTest.csprojResolveAssemblyReference.cache
 C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\SolarPanelTest\obj\Debug\SolarPanelTest.csproj.CoreCompileInputs.cache
 C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\SolarPanelTest\bin\Debug\SolarPanelTest.dll
@@ -24,3 +11,16 @@ C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\SolarPanelTest\b
 C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\SolarPanelTest\obj\Debug\SolarPanelTest.csproj.CopyComplete
 C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\SolarPanelTest\obj\Debug\SolarPanelTest.dll
 C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\SolarPanelTest\obj\Debug\SolarPanelTest.pdb
+C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SolarPanelTest\bin\Debug\SolarPanelTest.dll
+C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SolarPanelTest\bin\Debug\SolarPanelTest.pdb
+C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SolarPanelTest\bin\Debug\nunit.framework.dll
+C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SolarPanelTest\bin\Debug\SolarPanel.exe
+C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SolarPanelTest\bin\Debug\Contracts.dll
+C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SolarPanelTest\bin\Debug\SolarPanel.pdb
+C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SolarPanelTest\bin\Debug\SolarPanel.exe.config
+C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SolarPanelTest\bin\Debug\Contracts.pdb
+C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SolarPanelTest\obj\Debug\SolarPanelTest.csprojResolveAssemblyReference.cache
+C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SolarPanelTest\obj\Debug\SolarPanelTest.csproj.CoreCompileInputs.cache
+C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SolarPanelTest\obj\Debug\SolarPanelTest.csproj.CopyComplete
+C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SolarPanelTest\obj\Debug\SolarPanelTest.dll
+C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SolarPanelTest\obj\Debug\SolarPanelTest.pdb

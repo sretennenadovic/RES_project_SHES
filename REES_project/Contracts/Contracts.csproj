@@ -42,10 +42,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AddingProjects\IAddBattery.cs" />
+    <Compile Include="AddingProjects\IAddConsumer.cs" />
     <Compile Include="AddingProjects\IAdding.cs" />
     <Compile Include="AddingProjects\IAddSolarPanel.cs" />
     <Compile Include="BatteryConnection\IBattery.cs" />
     <Compile Include="BatteryConnection\IBatterySHES.cs" />
+    <Compile Include="ConsumerConnection\IConsumer.cs" />
+    <Compile Include="ConsumerConnection\IConsumerSHES.cs" />
     <Compile Include="SolarPanelConnection\ISolarPanel.cs" />
     <Compile Include="SolarPanelConnection\ISolarPanelSHES.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

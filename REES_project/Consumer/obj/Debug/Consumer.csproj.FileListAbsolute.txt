@@ -1,0 +1,9 @@
+C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\Consumer\bin\Debug\Consumer.exe.config
+C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\Consumer\bin\Debug\Consumer.exe
+C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\Consumer\bin\Debug\Consumer.pdb
+C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\Consumer\bin\Debug\Contracts.dll
+C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\Consumer\bin\Debug\Contracts.pdb
+C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\Consumer\obj\Debug\Consumer.csproj.CoreCompileInputs.cache
+C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\Consumer\obj\Debug\Consumer.csproj.CopyComplete
+C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\Consumer\obj\Debug\Consumer.exe
+C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\Consumer\obj\Debug\Consumer.pdb
