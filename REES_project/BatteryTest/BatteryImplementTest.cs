@@ -11,8 +11,8 @@ namespace BatteryTest
     [TestFixture]
     public class BatteryImplementTest
     {
-        public static Dictionary<string, double[]> example1 = new Dictionary<string, double[]>();
-        public static Dictionary<string, double[]> example2 = new Dictionary<string, double[]>();
+        public static Dictionary<string, Tuple<double, double[]>> example1 = new Dictionary<string, Tuple<double, double[]>>();
+        public static Dictionary<string, Tuple<double, double[]>> example2 = new Dictionary<string, Tuple<double, double[]>>();
 
 
 
@@ -47,18 +47,7 @@ namespace BatteryTest
         [TestCase(null, true)]
         [TestCase(null, false)]
         [ExpectedException(typeof(NullReferenceException))]
-        public void ListBatteriesBadParameter1(Dictionary<string, double[]> batteries, bool ready)
-        {
-            BatteryImplement batteryImplement = new BatteryImplement();
-
-            batteryImplement.ListBatteries(batteries, ready);
-        }
-
-        [Test]
-        [TestCase(0, true)]
-        [TestCase(0, false)]
-        [ExpectedException(typeof(ArgumentException))]
-        public void ListBatteriesBadParameter2(Dictionary<string, double[]> batteries, bool ready)
+        public void ListBatteriesBadParameter1(Dictionary<string, Tuple<double,double[]>> batteries, bool ready)
         {
             BatteryImplement batteryImplement = new BatteryImplement();
 
@@ -71,6 +60,18 @@ namespace BatteryTest
         [ExpectedException(typeof(ArgumentException))]
         public void ListBatteriesBadParameter2(bool ready)
         {
+            Dictionary<string, Tuple<double, double[]>> batteries = new Dictionary<string, Tuple<double, double[]>>();
+            BatteryImplement batteryImplement = new BatteryImplement();
+
+            batteryImplement.ListBatteries(batteries, ready);
+        }
+
+        [Test]
+        [TestCase(true)]
+        [TestCase(false)]
+        [ExpectedException(typeof(ArgumentException))]
+        public void ListBatteriesBadParameter3(bool ready)
+        {
             BatteryImplement batteryImplement = new BatteryImplement();
 
             batteryImplement.ListBatteries(example1, ready);
@@ -81,7 +82,7 @@ namespace BatteryTest
         public void ListBatteriesGoodParameter(bool ready)
         {
             BatteryImplement batteryImplement = new BatteryImplement();
-            example2.Add("example" ,new double[] { 1, 2 });
+            example2.Add("example" ,new Tuple<double, double[]>(1, new double[] { 1, 2 }));
 
             batteryImplement.ListBatteries(example2, ready);
         }

@@ -31,7 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="nunit.framework">
-      <HintPath>..\SHES_ConsolAppTest\bin\Debug\nunit.framework.dll</HintPath>
+      <HintPath>..\..\..\..\semestar6\res\Sreten\Zadatak1\resenje\eBanking_v1_resenje\eBanking\eBanking\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

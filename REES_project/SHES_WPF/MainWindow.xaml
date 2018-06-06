@@ -6,14 +6,53 @@
         xmlns:local="clr-namespace:SHES_WPF"
         xmlns:chartingToolkit="clr-namespace:System.Windows.Controls.DataVisualization.Charting;assembly=System.Windows.Controls.DataVisualization.Toolkit" x:Class="SHES_WPF.MainWindow"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Button x:Name="button" Content="Pokreni" HorizontalAlignment="Left" Height="40" Margin="632,351,0,0" VerticalAlignment="Top" Width="150" Click="button_Click"/>
-        <Button x:Name="button1" Content="Crtaj" HorizontalAlignment="Left" Height="40" Margin="412,351,0,0" VerticalAlignment="Top" Width="150"/>
-        <Label x:Name="label" Content="Izaberite datum za koji zelite izvestaj!" HorizontalAlignment="Left" Height="43" Margin="38,300,0,0" VerticalAlignment="Top" Width="321" FontSize="20"/>
+        Title="MainWindow" Height="525" Width="831.5">
+    <Grid Margin="-4,0,-8,-31">
+        <Button x:Name="button" Content="Start app" FontSize="18" HorizontalAlignment="Left" Height="40" Margin="630,432,0,0" VerticalAlignment="Top" Width="150" Click="button_Click"/>
+        <Button x:Name="button1" Content="Generate report" FontSize="18" HorizontalAlignment="Left" Height="40" Margin="416,432,0,0" VerticalAlignment="Top" Width="150" Click="button1_Click"/>
+        <Label x:Name="label" Content="Select Date to get the report:" HorizontalAlignment="Left" Height="43" Margin="70,384,0,0" VerticalAlignment="Top" Width="335" FontSize="20"/>
 
-        <chartingToolkit:Chart HorizontalAlignment="Left" Margin="38,40,0,0" VerticalAlignment="Top" Height="255" Width="444"/>
-        <DatePicker HorizontalAlignment="Left" Height="40" Margin="38,351,0,0" VerticalAlignment="Top" Width="170"/>
+        <chartingToolkit:Chart HorizontalAlignment="Left" Margin="38,116,0,0" VerticalAlignment="Top" Height="265" Width="452" Title="Display consummation/production" Name="sr" BorderBrush="White">
+            <chartingToolkit:Chart.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="0"/>
+                    <GradientStop Color="#FF9ADCF5" Offset="1"/>
+                </LinearGradientBrush>
+            </chartingToolkit:Chart.Background>
+
+            <chartingToolkit:Chart.Series>
+                <chartingToolkit:LineSeries Title="Solar panels"
+            IndependentValueBinding = "{Binding Path=Key}"
+            DependentValueBinding = "{Binding Path=Value}"/>
+
+                <chartingToolkit:LineSeries Title="Batteries"
+             IndependentValueBinding = "{Binding Path=Key}"
+            DependentValueBinding = "{Binding Path=Value}"/>
+
+                <chartingToolkit:LineSeries Title="Utility"
+            IndependentValueBinding = "{Binding Path=Key}"
+            DependentValueBinding = "{Binding Path=Value}"/>
+
+                <chartingToolkit:LineSeries Title="Consumers"
+            IndependentValueBinding = "{Binding Path=Key}"
+            DependentValueBinding = "{Binding Path=Value}"/>
+
+            </chartingToolkit:Chart.Series>
+            <chartingToolkit:Chart.Axes>
+                <chartingToolkit:LinearAxis Orientation="Y" 
+                                    Title="KWH" 
+                                        />
+                <chartingToolkit:LinearAxis Orientation="X" 
+                                    Title="Hours" 
+                                        />
+            </chartingToolkit:Chart.Axes>
+        </chartingToolkit:Chart>
+        <DatePicker HorizontalAlignment="Left" Height="40" Margin="112,432,0,0" VerticalAlignment="Top" Width="170" Name="Date"/>
+        <Rectangle HorizontalAlignment="Left" Height="119" Margin="316,8,0,0" Stroke="Black" VerticalAlignment="Top" Width="174" StrokeThickness="0">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="shes3.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
 
     </Grid>
 </Window>

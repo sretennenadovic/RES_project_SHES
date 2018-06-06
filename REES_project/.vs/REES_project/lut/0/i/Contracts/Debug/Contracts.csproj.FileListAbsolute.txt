@@ -1,7 +1,0 @@
-C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\.vs\REES_project\lut\0\b\Contracts\bin\Debug\Contracts.dll
-C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\.vs\REES_project\lut\0\b\Contracts\bin\Debug\Contracts.pdb
-C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\.vs\REES_project\lut\0\i\Contracts\Debug\Contracts.csprojResolveAssemblyReference.cache
-C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\.vs\REES_project\lut\0\i\Contracts\Debug\Contracts.csproj.CoreCompileInputs.cache
-C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\.vs\REES_project\lut\0\i\Contracts\Debug\Contracts.csproj.CopyComplete
-C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\.vs\REES_project\lut\0\i\Contracts\Debug\Contracts.dll
-C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\.vs\REES_project\lut\0\i\Contracts\Debug\Contracts.pdb

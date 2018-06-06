@@ -8,6 +8,6 @@ namespace Contracts.AddingProjects
 {
     public interface IAddBattery
     {
-        bool CheckValidation(string name, double capacity, double maxPower,Dictionary<string,double[]> dict);
+        bool CheckValidation(string name, double capacity, double maxPower,Dictionary<string,Tuple<double,double[]>> dict);
     }
 }

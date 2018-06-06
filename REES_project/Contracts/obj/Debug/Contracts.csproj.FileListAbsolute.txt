@@ -3,10 +3,14 @@ C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\Contracts\bin\De
 C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\Contracts\obj\Debug\Contracts.csproj.CoreCompileInputs.cache
 C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\Contracts\obj\Debug\Contracts.dll
 C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\Contracts\obj\Debug\Contracts.pdb
-C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\Contracts\obj\Debug\Contracts.csprojResolveAssemblyReference.cache
 C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\Contracts\bin\Debug\Contracts.dll
 C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\Contracts\bin\Debug\Contracts.pdb
 C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\Contracts\obj\Debug\Contracts.csproj.CoreCompileInputs.cache
 C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\Contracts\obj\Debug\Contracts.dll
 C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\Contracts\obj\Debug\Contracts.pdb
 C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\Contracts\obj\Debug\Contracts.csprojResolveAssemblyReference.cache
+C:\Users\PC\Desktop\proj\RES_project_SHES\REES_project\Contracts\bin\Debug\Contracts.dll
+C:\Users\PC\Desktop\proj\RES_project_SHES\REES_project\Contracts\bin\Debug\Contracts.pdb
+C:\Users\PC\Desktop\proj\RES_project_SHES\REES_project\Contracts\obj\Debug\Contracts.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\proj\RES_project_SHES\REES_project\Contracts\obj\Debug\Contracts.dll
+C:\Users\PC\Desktop\proj\RES_project_SHES\REES_project\Contracts\obj\Debug\Contracts.pdb

@@ -14,22 +14,12 @@ namespace SolarPanelTest
         public static Dictionary<string, double> example = new Dictionary<string, double>();
 
         [Test]
-        [TestCase(null, true)]
-        [TestCase(null, false)]
-        [ExpectedException(typeof(NullReferenceException))]
-        public void ListSolarPanelBadParameters1(Dictionary<string, double> solarPanels, bool ready)
-        {
-            SolarPanelImplement solarPanelImplement = new SolarPanelImplement();
-
-            solarPanelImplement.listSolarPanels(solarPanels, ready);
-        }
-
-        [Test]
-        [TestCase(0, true)]
-        [TestCase(0, false)]
+        [TestCase(true)]
+        [TestCase(false)]
         [ExpectedException(typeof(ArgumentException))]
-        public void ListBatteriesBadParameters2(Dictionary<string, double> solarPanels, bool ready)
+        public void ListBatteriesBadParameters2( bool ready)
         {
+            Dictionary<string, double> solarPanels = new Dictionary<string, double>();
             SolarPanelImplement solarPanelImplement = new SolarPanelImplement();
 
             solarPanelImplement.listSolarPanels(solarPanels, ready);

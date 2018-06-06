@@ -24,3 +24,27 @@ C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_proje
 C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SHES_ConsolAppTest\obj\Debug\SHES_ConsolAppTest.csproj.CopyComplete
 C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SHES_ConsolAppTest\obj\Debug\SHES_ConsolAppTest.dll
 C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SHES_ConsolAppTest\obj\Debug\SHES_ConsolAppTest.pdb
+C:\Users\PC\Desktop\proj\RES_project_SHES\REES_project\SHES_ConsolAppTest\obj\Debug\SHES_ConsolAppTest.csprojResolveAssemblyReference.cache
+C:\Users\PC\Desktop\proj\RES_project_SHES\REES_project\SHES_ConsolAppTest\obj\Debug\SHES_ConsolAppTest.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\proj\RES_project_SHES\REES_project\SHES_ConsolAppTest\bin\Debug\SHES_ConsolAppTest.dll
+C:\Users\PC\Desktop\proj\RES_project_SHES\REES_project\SHES_ConsolAppTest\bin\Debug\SHES_ConsolAppTest.pdb
+C:\Users\PC\Desktop\proj\RES_project_SHES\REES_project\SHES_ConsolAppTest\bin\Debug\Contracts.dll
+C:\Users\PC\Desktop\proj\RES_project_SHES\REES_project\SHES_ConsolAppTest\bin\Debug\Moq.dll
+C:\Users\PC\Desktop\proj\RES_project_SHES\REES_project\SHES_ConsolAppTest\bin\Debug\nunit.framework.dll
+C:\Users\PC\Desktop\proj\RES_project_SHES\REES_project\SHES_ConsolAppTest\bin\Debug\SHES_ConsolApp.exe
+C:\Users\PC\Desktop\proj\RES_project_SHES\REES_project\SHES_ConsolAppTest\bin\Debug\DBProject.exe
+C:\Users\PC\Desktop\proj\RES_project_SHES\REES_project\SHES_ConsolAppTest\bin\Debug\EntityFramework.dll
+C:\Users\PC\Desktop\proj\RES_project_SHES\REES_project\SHES_ConsolAppTest\bin\Debug\Contracts.pdb
+C:\Users\PC\Desktop\proj\RES_project_SHES\REES_project\SHES_ConsolAppTest\bin\Debug\SHES_ConsolApp.pdb
+C:\Users\PC\Desktop\proj\RES_project_SHES\REES_project\SHES_ConsolAppTest\bin\Debug\SHES_ConsolApp.exe.config
+C:\Users\PC\Desktop\proj\RES_project_SHES\REES_project\SHES_ConsolAppTest\bin\Debug\DBProject.pdb
+C:\Users\PC\Desktop\proj\RES_project_SHES\REES_project\SHES_ConsolAppTest\bin\Debug\DBProject.exe.config
+C:\Users\PC\Desktop\proj\RES_project_SHES\REES_project\SHES_ConsolAppTest\bin\Debug\EntityFramework.xml
+C:\Users\PC\Desktop\proj\RES_project_SHES\REES_project\SHES_ConsolAppTest\obj\Debug\SHES_ConsolAppTest.csproj.CopyComplete
+C:\Users\PC\Desktop\proj\RES_project_SHES\REES_project\SHES_ConsolAppTest\obj\Debug\SHES_ConsolAppTest.dll
+C:\Users\PC\Desktop\proj\RES_project_SHES\REES_project\SHES_ConsolAppTest\obj\Debug\SHES_ConsolAppTest.pdb
+C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\SHES_ConsolAppTest\bin\Debug\DBProject.exe
+C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\SHES_ConsolAppTest\bin\Debug\EntityFramework.dll
+C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\SHES_ConsolAppTest\bin\Debug\DBProject.pdb
+C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\SHES_ConsolAppTest\bin\Debug\DBProject.exe.config
+C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\SHES_ConsolAppTest\bin\Debug\EntityFramework.xml

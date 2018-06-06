@@ -17,13 +17,15 @@ namespace Battery
 
         public static ServiceHost sh = new ServiceHost(typeof(BatteryImplement));
         public static IBatterySHES proxy;
-        public static Dictionary<string, double[]> batteries = new Dictionary<string, double []>();
+        public static Dictionary<string, Tuple<double,double[]>> batteries = new Dictionary<string, Tuple<double,double[]>>();
         public static bool ready = false;
         public static int counter = 0;
         public static States state = States.ISKLJUCENA;
         static object _lock = new object();
 
         public static ConnectionClass connectionClass = new ConnectionClass();
+
+        public static double[] storage;
         #endregion Fileds
 
         static void Main(string[] args)
@@ -60,15 +62,21 @@ namespace Battery
 
                             foreach (var item in batteries)
                             {
-                                //ne mozemo napuniti bateriju vise nego sto joj je max snaga
+                                if (item.Value.Item1 > item.Value.Item2[0])
+                                {
+
                                     lock (_lock)
                                     {
                                         //pretvorimo sate kapaciteta u minute, uvecamo za 1, a zatim vratimo u sate
-                                        item.Value[0] = item.Value[0] * 60;
-                                        item.Value[0] += 1;
-                                        item.Value[0] = item.Value[0] / 60;
+                                        item.Value.Item2[0] = item.Value.Item2[0] * 60;
+                                        item.Value.Item2[0] += 1;
+                                        item.Value.Item2[0] = item.Value.Item2[0] / 60;
                                     }
-                                
+                                }
+                                else
+                                {
+                                    state = States.ISKLJUCENA;
+                                }
                             }
                         }
                     }
@@ -81,17 +89,22 @@ namespace Battery
 
                             foreach (var item in batteries)
                             {
-                                //ne mozemo isprazniti bateriju vise od 0
-                                if (item.Value[0] > 0)
+                                if (item.Value.Item2[0] >= 0)
                                 {
+                                    //ne mozemo is[razniti bateriju manje od 0
                                     lock (_lock)
                                     {
-                                        //pretvorimo sate kapaciteta u minute, umanjimo za 1, a zatim vratimo u sate
-                                        item.Value[0] = item.Value[0] * 60;
-                                        item.Value[0] -= 1;
-                                        item.Value[0] = item.Value[0] / 60;
+                                        //pretvorimo sate kapaciteta u minute, uvecamo za 1, a zatim vratimo u sate
+                                        item.Value.Item2[0] = item.Value.Item2[0] * 60;
+                                        item.Value.Item2[0] -= 1;
+                                        item.Value.Item2[0] = item.Value.Item2[0] / 60;
                                     }
                                 }
+                                else
+                                {
+                                    state = States.ISKLJUCENA;
+                                }
+
                             }
                         }
                     }
@@ -115,12 +128,16 @@ namespace Battery
                 while (true)
                 {
                     double rez = 0;
-                    foreach (KeyValuePair<string,double[]> item in batteries)
+                    foreach (double item in storage)
                     {
-                        lock(_lock)
+                        if (state != States.ISKLJUCENA)
                         {
-                            rez += (item.Value[1] / item.Value[0]);
+                            lock (_lock)
+                            {
+                                rez += item;
+                            }
                         }
+                        Console.WriteLine("Vrednost je; " + item);
                     }
 
                     try

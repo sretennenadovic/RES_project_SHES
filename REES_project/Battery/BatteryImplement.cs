@@ -18,7 +18,7 @@ namespace Battery
             Program.state = (Program.States)enumeration;
         }
 
-        public void ListBatteries(Dictionary<string, double[]> batteries, bool ready)
+        public void ListBatteries(Dictionary<string, Tuple<double,double[]>> batteries, bool ready)
         {
             if (batteries == null)
             {
@@ -30,6 +30,15 @@ namespace Battery
             }
             Program.batteries = batteries;
             Program.ready = ready;
+
+            int i = 0;
+
+            Program.storage = new double[batteries.Count];
+
+            foreach (var item in batteries)
+            {
+                Program.storage[i++] = (item.Value.Item2[1]/item.Value.Item2[0]);
+            }
         }
     }
 }

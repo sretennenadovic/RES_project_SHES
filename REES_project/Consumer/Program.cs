@@ -11,11 +11,14 @@ namespace Consumer
 {
     class Program
     {
+        #region Fields
         public static bool ready = false; 
         public static ServiceHost sh = new ServiceHost(typeof(ConsumerImplement));
         public static IConsumerSHES proxy;
         public static Dictionary<string, double> consumers = new Dictionary<string, double>();
         public static ConnectionClass connectionClass = new ConnectionClass();
+        #endregion Fields
+
         static void Main(string[] args)
         {
             connectionClass.OpenConnectionToSHES();
@@ -29,6 +32,8 @@ namespace Consumer
             }
             Console.ReadLine();
         }
+
+        #region Work
         private static void DoWork()
         {
             Task t1 = Task.Factory.StartNew(() =>
@@ -46,5 +51,6 @@ namespace Consumer
                 }
             });
         }
+        #endregion Work
     }
 }

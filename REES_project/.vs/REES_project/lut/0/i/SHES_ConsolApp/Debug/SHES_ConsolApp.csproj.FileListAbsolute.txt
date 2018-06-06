@@ -1,7 +1,0 @@
-C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\.vs\REES_project\lut\0\b\SHES_ConsolApp\bin\Debug\SHES_ConsolApp.exe.config
-C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\.vs\REES_project\lut\0\b\SHES_ConsolApp\bin\Debug\SHES_ConsolApp.exe
-C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\.vs\REES_project\lut\0\b\SHES_ConsolApp\bin\Debug\SHES_ConsolApp.pdb
-C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\.vs\REES_project\lut\0\i\SHES_ConsolApp\Debug\SHES_ConsolApp.csproj.CoreCompileInputs.cache
-C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\.vs\REES_project\lut\0\i\SHES_ConsolApp\Debug\SHES_ConsolApp.csproj.CopyComplete
-C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\.vs\REES_project\lut\0\i\SHES_ConsolApp\Debug\SHES_ConsolApp.exe
-C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\.vs\REES_project\lut\0\i\SHES_ConsolApp\Debug\SHES_ConsolApp.pdb

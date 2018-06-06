@@ -9,7 +9,6 @@ C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\Battery\bin\Debu
 C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\Battery\bin\Debug\Battery.pdb
 C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\Battery\bin\Debug\Contracts.dll
 C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\Battery\bin\Debug\Contracts.pdb
-C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\Battery\obj\Debug\Battery.csprojResolveAssemblyReference.cache
 C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\Battery\obj\Debug\Battery.csproj.CoreCompileInputs.cache
 C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\Battery\obj\Debug\Battery.csproj.CopyComplete
 C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\Battery\obj\Debug\Battery.exe
@@ -23,3 +22,14 @@ C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_proje
 C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\Battery\obj\Debug\Battery.csproj.CopyComplete
 C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\Battery\obj\Debug\Battery.exe
 C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\Battery\obj\Debug\Battery.pdb
+C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\Battery\obj\Debug\Battery.csprojResolveAssemblyReference.cache
+C:\Users\PC\Desktop\proj\RES_project_SHES\REES_project\Battery\bin\Debug\Battery.exe.config
+C:\Users\PC\Desktop\proj\RES_project_SHES\REES_project\Battery\bin\Debug\Battery.exe
+C:\Users\PC\Desktop\proj\RES_project_SHES\REES_project\Battery\bin\Debug\Battery.pdb
+C:\Users\PC\Desktop\proj\RES_project_SHES\REES_project\Battery\bin\Debug\Contracts.dll
+C:\Users\PC\Desktop\proj\RES_project_SHES\REES_project\Battery\bin\Debug\Contracts.pdb
+C:\Users\PC\Desktop\proj\RES_project_SHES\REES_project\Battery\obj\Debug\Battery.csprojResolveAssemblyReference.cache
+C:\Users\PC\Desktop\proj\RES_project_SHES\REES_project\Battery\obj\Debug\Battery.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\proj\RES_project_SHES\REES_project\Battery\obj\Debug\Battery.csproj.CopyComplete
+C:\Users\PC\Desktop\proj\RES_project_SHES\REES_project\Battery\obj\Debug\Battery.exe
+C:\Users\PC\Desktop\proj\RES_project_SHES\REES_project\Battery\obj\Debug\Battery.pdb

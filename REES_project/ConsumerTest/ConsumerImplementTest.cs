@@ -25,11 +25,12 @@ namespace ConsumerTest
         }
 
         [Test]
-        [TestCase(0, true)]
-        [TestCase(0, false)]
+        [TestCase(true)]
+        [TestCase(false)]
         [ExpectedException(typeof(ArgumentException))]
-        public void ListConsumersEmptyDictionary(Dictionary<string, double> consumers, bool ready)
+        public void ListConsumersEmptyDictionary(bool ready)
         {
+            Dictionary<string, double> consumers = new Dictionary<string, double>();
             ConsumerImplement consumerImplement = new ConsumerImplement();
 
             consumerImplement.ListConsumers(consumers, ready);

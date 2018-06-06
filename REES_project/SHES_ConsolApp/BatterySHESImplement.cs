@@ -41,6 +41,7 @@ namespace SHES_ConsolApp
                 lock (Program.obj)
                 {
                     Program.batteryPom = pom;
+                    Program.readyToCount = true;
                 }
                 pom = 0;
                 counter = 0;

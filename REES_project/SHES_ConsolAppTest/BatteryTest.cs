@@ -15,8 +15,8 @@ namespace SHES_ConsolAppTest
     [TestFixture]
     public class BatteryTest
     {
-        Dictionary<string, double[]> example2;
-         Dictionary<string, double[]> example1 = new Dictionary<string, double[]>();
+        Dictionary<string, Tuple<double,double[]>> example2;
+        Dictionary<string, Tuple<double, double[]>> example1 = new Dictionary<string, Tuple<double, double[]>>();
         
 
         [Test]
@@ -104,9 +104,9 @@ namespace SHES_ConsolAppTest
         public void BatteryCheckValidationNameAlreadyExists(string name, double capacity, double maxPower)
         {
             Battery battery = new Battery();
-            example2 = new Dictionary<string, double[]>();
-            example2.Add("duracel", new double[] { 3, 4 });
-            example2.Add("varta", new double[] { 3, 4 });
+            example2 = new Dictionary<string, Tuple<double,double[]>>();
+            example2.Add("duracel", new Tuple<double, double[]>(3,new double[] { 3, 4 }));
+            example2.Add("varta", new Tuple<double, double[]>(3, new double[] { 3, 4 }));
 
             battery.CheckValidation(name, capacity, maxPower, example2);
 
@@ -125,9 +125,9 @@ namespace SHES_ConsolAppTest
         public void BatteryCheckValidationAllGoodParameters(string name, double capacity, double maxPower)
         {
             Battery battery = new Battery();
-            example2 = new Dictionary<string, double[]>();
-            example2.Add("duracel", new double[] { 3, 4 });
-            example2.Add("varta", new double[] { 3, 4 });
+            example2 = new Dictionary<string, Tuple<double,double[]>>();
+            example2.Add("duracel", new Tuple<double, double[]>(3, new double[] { 3, 4 }));
+            example2.Add("varta", new Tuple<double, double[]>(3, new double[] { 3, 4 }));
 
             battery.CheckValidation(name, capacity, maxPower, example2);
 

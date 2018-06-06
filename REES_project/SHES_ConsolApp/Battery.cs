@@ -33,7 +33,7 @@ namespace SHES_ConsolApp
                
                 if (CheckValidation(name, capacity, maxPower,Program.addBatteries))
                 {
-                    Program.addBatteries.Add(name,new double[] { capacity, maxPower });
+                    Program.addBatteries.Add(name,new Tuple<double, double[]>(capacity, new double[] { capacity, maxPower }));
                 }
                 
             }
@@ -41,7 +41,7 @@ namespace SHES_ConsolApp
 ------------------------------------");
         }
 
-        public bool CheckValidation(string name, double capacity, double maxPower,Dictionary<string,double[]> dict)
+        public bool CheckValidation(string name, double capacity, double maxPower,Dictionary<string,Tuple<double,double[]>> dict)
         {
             bool ret = true;
 
