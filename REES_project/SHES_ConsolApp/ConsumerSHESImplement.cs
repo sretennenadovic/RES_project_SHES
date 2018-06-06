@@ -31,7 +31,6 @@ namespace SHES_ConsolApp
                     lock (Program.obj)
                     {
                         Program.consumerPom = consummation;
-                       // Program.readyToCount = true;
                     }
                     pom = 0; counter = 0;
                 }

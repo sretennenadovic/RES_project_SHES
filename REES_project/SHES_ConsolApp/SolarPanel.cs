@@ -14,8 +14,7 @@ namespace SHES_ConsolApp
             Console.WriteLine("Insert number of solar panels: ");
             int numberPanels = Int32.Parse(Console.ReadLine());
 
-            Console.WriteLine(@"------------------------------------
-************************************");
+            Console.WriteLine(@"*********ADDING SOLAR PANELS********");
             for (int i = 0; i < numberPanels; i++)
             {
                 Console.WriteLine("Insert name of panel: ");
@@ -30,8 +29,8 @@ namespace SHES_ConsolApp
                 }
 
             }
-            Console.WriteLine(@"************************************
-------------------------------------");
+            Console.WriteLine(@"*********SOLAR PANELS ADDED*********
+------------------------------------" + Environment.NewLine);
         }
 
         public bool CheckValidation(string name, double maxPower, Dictionary<string, double> dict)

@@ -111,7 +111,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="shes3.png" />
+    <Resource Include="34561782_1687694077950450_5568597469186490368_n.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -11,6 +11,7 @@ namespace Utility
     {
         public double CalculateMoney(double energy)
         {
+            //cenu nije definisana pa smo nasumicno odabrali 
             return energy * 10;
         }
     }

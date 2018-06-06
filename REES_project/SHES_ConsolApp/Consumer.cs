@@ -14,8 +14,7 @@ namespace SHES_ConsolApp
             Console.WriteLine("Insert number of consumers: ");
             int numberConsumers = Int32.Parse(Console.ReadLine());
 
-            Console.WriteLine(@"------------------------------------
-************************************");
+            Console.WriteLine(@"**********ADDING CONSUMERS**********");
             for (int i = 0; i < numberConsumers; i++)
             {
                 Console.WriteLine("Insert name of consumer: ");
@@ -30,8 +29,8 @@ namespace SHES_ConsolApp
                 }
 
             }
-            Console.WriteLine(@"************************************
-------------------------------------");
+            Console.WriteLine(@"*********CONSUMERS ADDED************
+------------------------------------" + Environment.NewLine);
         }
 
         public bool CheckValidation(string name, double consummation, Dictionary<string, double> dict)

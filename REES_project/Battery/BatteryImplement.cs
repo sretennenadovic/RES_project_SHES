@@ -33,6 +33,7 @@ namespace Battery
 
             int i = 0;
 
+            //pravimo storage(niz) koji sadrzi za svaku bateriju koja je energija koju ona salje
             Program.storage = new double[batteries.Count];
 
             foreach (var item in batteries)

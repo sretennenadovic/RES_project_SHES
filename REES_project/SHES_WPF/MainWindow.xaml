@@ -8,11 +8,12 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="525" Width="831.5">
     <Grid Margin="-4,0,-8,-31">
-        <Button x:Name="button" Content="Start app" FontSize="18" HorizontalAlignment="Left" Height="40" Margin="630,432,0,0" VerticalAlignment="Top" Width="150" Click="button_Click"/>
-        <Button x:Name="button1" Content="Generate report" FontSize="18" HorizontalAlignment="Left" Height="40" Margin="416,432,0,0" VerticalAlignment="Top" Width="150" Click="button1_Click"/>
-        <Label x:Name="label" Content="Select Date to get the report:" HorizontalAlignment="Left" Height="43" Margin="70,384,0,0" VerticalAlignment="Top" Width="335" FontSize="20"/>
+        <Button x:Name="button" Content="Start app" FontSize="18" HorizontalAlignment="Left" Height="40" Margin="30,428,0,0" VerticalAlignment="Top" Width="150" Click="button_Click" RenderTransformOrigin="0.5,0.762"/>
+        <Button x:Name="button3" Content="Close app" FontSize="18" HorizontalAlignment="Left" Height="40" Margin="588,428,0,0" VerticalAlignment="Top" Width="150" Click="button3_Click"/>
+        <Button x:Name="button1" Content="Generate report" FontSize="18" HorizontalAlignment="Left" Height="40" Margin="588,207,0,0" VerticalAlignment="Top" Width="150" Click="button1_Click"/>
+        <Label x:Name="label" Content="Select Date to get the report:" HorizontalAlignment="Left" Height="43" Margin="531,116,0,0" VerticalAlignment="Top" Width="275" FontSize="20"/>
 
-        <chartingToolkit:Chart HorizontalAlignment="Left" Margin="38,116,0,0" VerticalAlignment="Top" Height="265" Width="452" Title="Display consummation/production" Name="sr" BorderBrush="White">
+        <chartingToolkit:Chart HorizontalAlignment="Left" Margin="30,116,0,0" VerticalAlignment="Top" Height="285" Width="460" Title="Display consummation/production" Name="sr" BorderBrush="White">
             <chartingToolkit:Chart.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="White" Offset="0"/>
@@ -43,16 +44,20 @@
                                     Title="KWH" 
                                         />
                 <chartingToolkit:LinearAxis Orientation="X" 
+                                            
                                     Title="Hours" 
                                         />
             </chartingToolkit:Chart.Axes>
         </chartingToolkit:Chart>
-        <DatePicker HorizontalAlignment="Left" Height="40" Margin="112,432,0,0" VerticalAlignment="Top" Width="170" Name="Date"/>
-        <Rectangle HorizontalAlignment="Left" Height="119" Margin="316,8,0,0" Stroke="Black" VerticalAlignment="Top" Width="174" StrokeThickness="0">
+        <DatePicker HorizontalAlignment="Left" Height="32" Margin="588,162,0,0" VerticalAlignment="Top" Width="150" Name="Date"/>
+        <Rectangle HorizontalAlignment="Left" Height="119" Margin="351,5,0,0" Stroke="Black" VerticalAlignment="Top" Width="174" StrokeThickness="0">
             <Rectangle.Fill>
-                <ImageBrush ImageSource="shes3.png"/>
+                <ImageBrush ImageSource="34561782_1687694077950450_5568597469186490368_n.png"/>
             </Rectangle.Fill>
         </Rectangle>
+        <Label x:Name="label1" Content="" FontSize="18" HorizontalAlignment="Left" Height="46" Margin="515,269,0,0" VerticalAlignment="Top" Width="299"/>
+        <Label x:Name="label2" Content="" FontSize="18" HorizontalAlignment="Left" Height="42" Margin="562,359,0,0" VerticalAlignment="Top" Width="202" RenderTransformOrigin="0.488,0.533"/>
+        <Label x:Name="label3" Content="" FontSize="18" HorizontalAlignment="Left" Height="47" Margin="531,299,0,0" VerticalAlignment="Top" Width="235"/>
 
     </Grid>
 </Window>

@@ -65,7 +65,7 @@ namespace SolarPanel
                         }
                         else if(DateTime.Now.Hour >= 18 && DateTime.Now.Hour < 20)
                         {
-                            rez += (item.Value * 0.2)/3;
+                            rez += (item.Value * 0.2)/2;
                         }
                     }
                     try

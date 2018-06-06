@@ -66,7 +66,6 @@ C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_proje
 C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SHES_WPF\obj\Debug\SHES_WPF.exe
 C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SHES_WPF\obj\Debug\SHES_WPF.pdb
 C:\Users\Aleksandar\Desktop\Razvoj EES\Projekat REES\RES_project_SHES\REES_project\SHES_WPF\obj\Debug\SHES_WPF.csprojResolveAssemblyReference.cache
-C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\SHES_WPF\obj\Debug\SHES_WPF.csprojResolveAssemblyReference.cache
 C:\Users\PC\Desktop\proj\RES_project_SHES\REES_project\SHES_WPF\bin\Debug\SHES_WPF.exe.config
 C:\Users\PC\Desktop\proj\RES_project_SHES\REES_project\SHES_WPF\bin\Debug\SHES_WPF.exe
 C:\Users\PC\Desktop\proj\RES_project_SHES\REES_project\SHES_WPF\bin\Debug\SHES_WPF.pdb
@@ -99,3 +98,4 @@ C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\SHES_WPF\bin\Deb
 C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\SHES_WPF\bin\Debug\DBProject.exe.config
 C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\SHES_WPF\bin\Debug\EntityFramework.xml
 C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\SHES_WPF\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\SHES_WPF\obj\Debug\SHES_WPF.csprojResolveAssemblyReference.cache

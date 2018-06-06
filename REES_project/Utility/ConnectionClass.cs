@@ -16,6 +16,5 @@ namespace Utility
             Program.sh.AddServiceEndpoint(typeof(IUtility), new NetTcpBinding(), new Uri("net.tcp://localhost:10050/IUtility"));
             Program.sh.Open();
         }
-
     }
 }

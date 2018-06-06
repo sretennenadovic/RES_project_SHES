@@ -17,7 +17,6 @@ C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\DBProject\bin\De
 C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\DBProject\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\DBProject\bin\Debug\EntityFramework.xml
 C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\DBProject\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\DBProject\obj\Debug\DBProject.csprojResolveAssemblyReference.cache
 C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\DBProject\obj\Debug\DBProject.csproj.CoreCompileInputs.cache
 C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\DBProject\obj\Debug\DBProject.csproj.CopyComplete
 C:\Users\PC\Desktop\REES_projekat\RES_project_SHES\REES_project\DBProject\obj\Debug\DBProject.exe

@@ -25,31 +25,36 @@ namespace SHES_WPF
     /// </summary>
     public partial class MainWindow : Window
     {
-        //public double[] batteryDbValues = null;
+        #region Drawing
+
         static List<double> batteryDbValues = new List<double>();
         static List<double> panelDbValues = new List<double>();
         static List<double> consumersDbValues = new List<double>();
         static List<double> utilityDbValues = new List<double>();
-        static DateTime Start ;
+        static List<double> tempUtilityMoney = new List<double>();
+        static DateTime Start;
 
-        List<KeyValuePair<DateTime, double>>  listBattery = new List<KeyValuePair<DateTime, double>>();
+
+        List<KeyValuePair<DateTime, double>> listBattery = new List<KeyValuePair<DateTime, double>>();
         List<KeyValuePair<DateTime, double>> listPanel = new List<KeyValuePair<DateTime, double>>();
         List<KeyValuePair<DateTime, double>> listConsumers = new List<KeyValuePair<DateTime, double>>();
         List<KeyValuePair<DateTime, double>> listUtility = new List<KeyValuePair<DateTime, double>>();
+        List<KeyValuePair<DateTime, double>> listUtilityMoney = new List<KeyValuePair<DateTime, double>>();
+        #endregion
+
+        #region Process
+        Process shesConAppProces;
+        #endregion
 
         public MainWindow()
         {
             InitializeComponent();
         }
 
-        public void Load()
-        {
-
-        }
-
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            Process shesConAppProces = new Process();
+            //startujemo proces consol app shes
+            shesConAppProces = new Process();
             shesConAppProces.StartInfo.FileName = @"..\..\..\SHES_ConsolApp\bin\Debug\SHES_ConsolApp.exe";
             shesConAppProces.Start();
         }
@@ -58,6 +63,7 @@ namespace SHES_WPF
 
         private void LoadBarChartData(string formatted)
         {
+            //moramo prvo formatirati datum zbog baze
             DateTime from = Convert.ToDateTime(formatted + " 00:00");
             DateTime to = Convert.ToDateTime(formatted + " 23:59");
 
@@ -70,6 +76,7 @@ namespace SHES_WPF
                 panelDbValues = (query.Select(x => x.PanelPower)).ToList();
                 consumersDbValues = (query.Select(x => x.ConsumersPower)).ToList();
                 utilityDbValues = (query.Select(x => x.UtilityMoney)).ToList();
+                tempUtilityMoney = (query.Select(x => x.UtilityMoney)).ToList();
             }
 
             //da bi bilo optimizovanije saljem true ili false jer se poslednja malo razlikuje,
@@ -78,71 +85,12 @@ namespace SHES_WPF
             GetKeyValuePairs(panelDbValues, listPanel, false);
             GetKeyValuePairs(consumersDbValues,listConsumers, false);
             GetKeyValuePairs(utilityDbValues,listUtility, true);
+            GetKeyValuePairs(tempUtilityMoney,listUtilityMoney, false);
 
             ((LineSeries)sr.Series[0]).ItemsSource = listPanel.ToArray();
             ((LineSeries)sr.Series[1]).ItemsSource = listBattery.ToArray();
             ((LineSeries)sr.Series[2]).ItemsSource = listUtility.ToArray();
             ((LineSeries)sr.Series[3]).ItemsSource = listConsumers.ToArray();
-
-
-            //GetKeyValuePairs()
-
-            /* DateTime from = Convert.ToDateTime(formatted + " 00:00");
-             DateTime to = Convert.ToDateTime(formatted + " 23:59");
-
-             var con = @"Data Source=(localdb)\mssqllocaldb;Initial Catalog=InfosDb; Integrated Security = true";
-
-
-             using (SqlConnection myConnection = new SqlConnection(con))
-             {
-                 string batteryString = $"Select BatteryPower from Infos where Time>{from}&&Time<{to}";
-                 string panelString = $"Select PanelPower from Infos where Time>{from}&&Time<{to}";
-                 string consumersString = $"Select ConsumersPower from Infos where Time>{from}&&Time<{to}";
-                 string utilityString = $"Select UtilityMoney from Infos where Time>{from}&&Time<{to}";
-
-                 SqlCommand oCmd = new SqlCommand(batteryString, myConnection);
-                 SqlCommand oCmd = new SqlCommand(batteryString, myConnection);
-                 SqlCommand oCmd = new SqlCommand(batteryString, myConnection);
-                 SqlCommand oCmd = new SqlCommand(batteryString, myConnection);
-                 oCmd.Parameters.AddWithValue("@Fname", fName);
-                 myConnection.Open();
-                 using (SqlDataReader oReader = oCmd.ExecuteReader())
-                 {
-                     while (oReader.Read())
-                     {
-                         matchingPerson.firstName = oReader["FirstName"].ToString();
-                         matchingPerson.lastName = oReader["LastName"].ToString();
-                     }
-
-                     myConnection.Close();
-                 }
-             }*/
-
-
-            //  ((LineSeries)sr.Series[0]).ItemsSource = lista;
-
-            // }
-
-            /*      ((LineSeries)sr.Series[1]).ItemsSource =
-                  new KeyValuePair<DateTime, int>[]{
-              new KeyValuePair<DateTime,int>(DateTime.Now, 200),
-                      new KeyValuePair<DateTime, int>(DateTime.Now.AddHours(1),200),
-                      new KeyValuePair<DateTime, int>(DateTime.Now.AddHours(2),500),
-                      new KeyValuePair<DateTime, int>(DateTime.Now.AddHours(3),0)};
-
-                  ((LineSeries)sr.Series[2]).ItemsSource =
-                     new KeyValuePair<DateTime, int>[]{
-              new KeyValuePair<DateTime,int>(DateTime.Now, 0),
-                      new KeyValuePair<DateTime, int>(DateTime.Now.AddHours(1),100),
-                      new KeyValuePair<DateTime, int>(DateTime.Now.AddHours(2),200),
-                      new KeyValuePair<DateTime, int>(DateTime.Now.AddHours(3),300)};
-
-                  ((LineSeries)sr.Series[3]).ItemsSource =
-                          new KeyValuePair<DateTime, int>[]{
-              new KeyValuePair<DateTime,int>(DateTime.Now, 100),
-                      new KeyValuePair<DateTime, int>(DateTime.Now.AddHours(1),-100),
-                      new KeyValuePair<DateTime, int>(DateTime.Now.AddHours(2),100),
-                      new KeyValuePair<DateTime, int>(DateTime.Now.AddHours(3),-100)};*/
         }
 
 
@@ -181,42 +129,7 @@ namespace SHES_WPF
                     list.Add(new KeyValuePair<DateTime, double>((Start.AddHours(cnt + (double)i / 8)), value));
                     array.Clear();
                 }
-                
             }
-   
-
-          /*  double rez = 0;
-            int counter = 0;
-
-            for (int i = 1; i <= array.Count(); i++)
-            {
-                rez += array[i-1];
-                if (i % 8 == 0 && i!=0)
-                {
-                    counter++;
-                    rez = rez / 8;
-                    list.Add(new KeyValuePair<DateTime, double>(DateTime.Now.AddHours(counter), rez));
-                    rez = 0;
-                }
-                if ((array.Count() - (counter * 8)) < 8)
-                {
-                    for (int j = (counter * 8)+1; j <= array.Count(); j++)
-                    {
-                        rez += array[j-1];
-                        if (j == array.Count())
-                        {
-                            //trazimo prosek za ta merenja koja nisu do punog sata (ovde uzeto 8 merenja da je sat)
-                            rez = rez / (array.Count() - (counter * 8));
-                            //posto name je to prosek za sat moramo pomnoziti sa brojem merenja (koja su manje od 1 sata)
-                            //i podeliti sa brojem merenja u celom satu, da bi dobili koliko je zaista proizvedeno u
-                            //periodu manjem od sata
-                            rez = rez * (array.Count() - (counter * 8)) / 8;
-                            list.Add(new KeyValuePair<DateTime, double>(DateTime.Now.AddHours(counter), rez));
-                        }
-                    }
-                    break;
-                }
-            }*/
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)
@@ -229,6 +142,31 @@ namespace SHES_WPF
             }
 
             LoadBarChartData(formatted);
+
+            double price = 0;
+
+            foreach (KeyValuePair<DateTime,double> item in listUtilityMoney)
+            {
+                price += item.Value;
+            }
+
+            price = price / listUtilityMoney.Count;
+            label1.Content = "Money which you earned/spent ";
+            label3.Content = $"on energy on date {Start.Date.Day}.{Start.Date.Month}.{Start.Date.Year}:";
+            label2.Content = Convert.ToString(price+" $");
+
+            listUtilityMoney.Clear();
+        }
+
+        private void button3_Click(object sender, RoutedEventArgs e)
+        {
+            Process[] runningProcesses = Process.GetProcesses();
+            foreach (Process process in runningProcesses)
+            {
+                if (process.ProcessName.Equals("Battery") || process.ProcessName.Equals("Utility") || process.ProcessName.Equals("SolarPanel") || process.ProcessName.Equals("Consumer"))
+                    process.Kill();
+            }
+            shesConAppProces.Kill();
         }
     }
 }

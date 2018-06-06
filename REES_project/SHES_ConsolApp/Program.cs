@@ -34,6 +34,7 @@ namespace SHES_ConsolApp
         static ServiceHost sh3 = new ServiceHost(typeof(ConsumerSHESImplement));
         #endregion ServiceHosts
 
+        #region Other
         public enum States : int { PUNJENJE = 0, PRAZNJENJE = 1, ISKLJUCENA = 2 };
         public static bool readyToCount = false;
         public static States state = States.ISKLJUCENA;
@@ -42,8 +43,9 @@ namespace SHES_ConsolApp
         static Battery battery = new Battery();
         static SolarPanel panel = new SolarPanel();
         static Consumer consumer = new Consumer();
+        #endregion
 
-        //staticke za cuvanje rezultata (sabiranje) sto pristize od ostalih projekata, a nakon 10s se racuna njiva srednja vrednost i resetuju se na 0
+        //staticke za cuvanje rezultata (sabiranje) sto pristize od ostalih projekata, a nakon 10s se racuna njihova srednja vrednost i resetuju se na 0
         #region PomValues
         public static double batteryPom = 0;
         public static double panelPom = 0;
@@ -58,7 +60,7 @@ namespace SHES_ConsolApp
 
             AddComponents();
 
-            //izmestiti negde
+            //Posto smo dodali sve komponente, saljemo im odgovarajuce informacije
             Task t = Task.Factory.StartNew(() =>
             {
                 proxyBattery.ListBatteries(addBatteries, true);
@@ -66,12 +68,11 @@ namespace SHES_ConsolApp
                 proxyConsumer.ListConsumers(addConsumers, true);
             });
             
-            //izmestiti negde
-
+            //metoda iz regiona Ordering batteries
             DoWork();
+            //Racunanje novca iz Utility-a
             Count();
             //ovo ce ici u task ili while true
-
 
             Console.ReadKey();
         }
@@ -83,7 +84,6 @@ namespace SHES_ConsolApp
             {
                 while (true)
                 {
-                    Console.WriteLine(readyToCount.ToString());
                     Thread.Sleep(1000);
                     if (readyToCount)
                     {
@@ -101,25 +101,20 @@ namespace SHES_ConsolApp
                             batteryPom = 0;
                         }
 
-                        Console.WriteLine(state.ToString());
-
                         if (state == States.ISKLJUCENA)
                         {
                             value = panelPom2 - consumerPom2;
                             price = proxyUtility.CalculateMoney(value);
-                            //Console.WriteLine("Panel: " + panelPom2 + " baterija: " + batteryPom2 + " potrosaci: " + consumerPom2);
                         }
                         else if (state == States.PRAZNJENJE)
                         {
                             value = panelPom2 + batteryPom2 - consumerPom2;
                             price = proxyUtility.CalculateMoney(value);
-                            //Console.WriteLine("Panel: " + panelPom2 + " baterija: " + batteryPom2 + " potrosaci: " + consumerPom2);
                         }
                         else
                         {
                             value = panelPom2 - batteryPom2 - consumerPom2;
                             price = proxyUtility.CalculateMoney(value);
-                            //Console.WriteLine("Panel: " + panelPom2 + " baterija: " + batteryPom2 + " potrosaci: " + consumerPom2);
                         }
 
                         //***************************************************************************************
@@ -161,11 +156,12 @@ namespace SHES_ConsolApp
             {
                 while (true)
                 {
+                    //uz objasnjenje koje znamo
                     if(DateTime.Now.Hour == 3 && DateTime.Now.Minute == 0 && DateTime.Now.Second == 00/*|| DateTime.Now.Hour == 4 || DateTime.Now.Hour == 5*/)
                     {
                         proxyBattery.DoWork(0);
                     }
-                    else if(/*DateTime.Now.Hour == 14 || DateTime.Now.Hour == 15*/ DateTime.Now.Hour == 10 && DateTime.Now.Minute==56)
+                    else if(/*DateTime.Now.Hour == 16 || DateTime.Now.Hour == 15*/ DateTime.Now.Hour == 14 && DateTime.Now.Minute==00 && DateTime.Now.Second == 00)
                     {
                         proxyBattery.DoWork(1);
                     }

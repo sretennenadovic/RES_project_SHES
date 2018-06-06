@@ -62,6 +62,7 @@ namespace Battery
 
                             foreach (var item in batteries)
                             {
+                                //item1 je maksimalni kapacitet, dok je item2[0] trenutni, a item2[1] je maksimalna snaga
                                 if (item.Value.Item1 > item.Value.Item2[0])
                                 {
 
@@ -137,9 +138,7 @@ namespace Battery
                                 rez += item;
                             }
                         }
-                        Console.WriteLine("Vrednost je; " + item);
                     }
-
                     try
                     {
                         proxy.MyInfo(rez, (int)state);
@@ -147,7 +146,6 @@ namespace Battery
                     {
                         Console.WriteLine(e.Message);
                     }
-
                     Thread.Sleep(1000);
                 }
             });
